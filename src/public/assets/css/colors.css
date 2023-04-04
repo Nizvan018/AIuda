@@ -1,0 +1,63 @@
+/* COLORES */
+:root{
+    --negro: #121212;
+    --gris-oscuro: #1b1b1b;
+    --gris-medio: #838383;
+    --gris-claro: #dbdbdb;
+    --blanco: white;
+    --dark:#000000;
+
+    --amarillo: #ff914d;
+    --rosa: #bd3e76;
+}
+
+/* FONDOS */
+.fondo-negro{
+    background-color: var(--negro);
+}
+.fondo-dark{
+    background-color: var(--dark);
+}
+.fondo-gris-oscuro{
+    background-color: var(--gris-oscuro);
+}
+.fondo-gris-medio{
+    background-color: var(--gris-medio);
+}
+.fondo-gris-claro{
+    background-color: var(--gris-claro);
+}
+.fondo-blanco{
+    background-color: var(--blanco);
+}
+.fondo-amarillo{
+    background-color: var(--amarillo);
+}
+.fondo-rosa{
+    background-color: var(--rosa);
+}
+
+/* COLORES DE LETRA */
+.color-negro{
+    color: var(--negro);
+}
+.color-gris-oscuro{
+    color: var(--gris-oscuro)
+}
+.color-gris-medio{
+    color: var(--gris-medio);
+}
+.color-gris-claro{
+    color: var(--gris-claro)
+}
+.color-blanco{
+    color: var(--blanco)
+}
+.color-amarillo{
+    color: var(--amarillo)
+}
+.color-rosa{
+    color: var(--rosa)
+}
+
+

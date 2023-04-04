@@ -1,0 +1,62 @@
+/* TAMAÑOS */
+.texto-mini{
+    font-size: 10px;
+}
+.texto-peque{
+    font-size: 12px;
+}
+.texto-mediano{
+    font-size: 14px;
+}
+.texto-grande{
+    font-size: 20px;
+}
+.texto-grandote{
+    font-size: 24px;
+}
+.texto-enorme{
+    font-size: 32px;
+}
+.texto-colosal{
+    font-size: 48px;
+}
+.texto-colosal-extra{
+    font-size: 64px;
+}
+
+/* PESOS */
+.texto-peso-100{
+    font-weight: 100;
+}
+.texto-peso-200{
+    font-weight: 200;
+}
+.texto-peso-300{
+    font-weight: 300;
+}
+.texto-peso-400{
+    font-weight: 400;
+}
+.texto-peso-500{
+    font-weight: 500;
+}
+.texto-peso-600{
+    font-weight: 600;
+}
+.texto-peso-700{
+    font-weight: 700;
+}
+.texto-peso-800{
+    font-weight: 800;
+}
+.texto-peso-900{
+    font-weight: 900;
+}
+
+/* OTROS */
+.texto-centro{
+    text-align: center;
+}
+.texto-justificado{
+    text-align: justify;
+}

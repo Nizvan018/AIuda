@@ -1,0 +1,17 @@
+.borde-blanco{
+    border: 2px #838383 solid;
+}
+
+button{
+    background: transparent;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button.color-gris-medio:hover{
+    color: white;
+    border-color: white;
+}
+button.borde-recto{
+    border: 1px #838383 solid;;
+}
