@@ -5,6 +5,14 @@ header{
 }
 a{
     text-decoration: none;
+    transition: 0.2s;
+    padding: 6px 0;
+}
+a:hover{
+    padding: 6px 12px;
+    color: white;
+    font-weight: 500;
+    border-bottom: 1px white solid;
 }
 header .barrita{
     height: 36px;

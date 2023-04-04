@@ -1,0 +1,15 @@
+.titulo-aux{
+    display: none;
+}
+
+@media (max-width: 640px){
+    .mitad-foto{
+        display: none;
+    }
+    .titulo-aux{
+        display: block;
+    }
+    .mitad-texto{
+        width: 100%;
+    }
+}

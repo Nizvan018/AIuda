@@ -8,8 +8,11 @@
 body{
     min-width: 100%;
     width: 100%;
-    min-height: 100%;
     height: 100%;
+}
+.contenido-principal{
+    min-height: calc(100% - 70px);
+    padding-bottom: 50px;
 }
 
 /* DISPLAY FLEX */
@@ -237,4 +240,13 @@ body{
 }
 .p-abajo-50{
     padding-bottom: 50px;
+}
+
+/* OTROS */
+i{
+    cursor: pointer;
+    transition: 0.2s;
+}
+i.color-gris-medio:hover{
+    color: white;
 }
