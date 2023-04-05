@@ -24,3 +24,24 @@ header .barrita{
 header .opciones{
     font-weight: 300;
 }
+
+@media (max-width: 600px){
+    header a.titulo{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    header a.titulo span{
+        font-size: 20px;
+    }
+    header .opciones a{
+        font-size: 12px;
+        padding: 6px 8px;
+        margin-right: 10px;
+    }
+    header a:hover{
+        padding: 6px 8px;
+    }
+    header .barrita{
+        margin-right: 2px;
+    }
+}
