@@ -301,3 +301,6 @@ a.referencia-violeta{
 a.referencia:hover{
     cursor: pointer;
 }
+p.cita{
+    transition: 0.5s;
+}
