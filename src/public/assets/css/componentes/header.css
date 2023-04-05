@@ -3,16 +3,19 @@ header{
     height: 70px;
     padding: 0 20px
 }
-a{
+header a{
     text-decoration: none;
     transition: 0.2s;
     padding: 6px 0;
 }
-a:hover{
+.opciones a:hover{
     padding: 6px 12px;
     color: white;
     font-weight: 500;
     border-bottom: 1px white solid;
+}
+header a:hover{
+    padding: 6px 14px;
 }
 header .barrita{
     height: 36px;

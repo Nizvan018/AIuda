@@ -8,7 +8,10 @@
     --dark:#000000;
 
     --amarillo: #ff914d;
+    --azul: #3a86ff;
     --rosa: #bd3e76;
+    --violeta: #8338ec;
+    
 }
 
 /* FONDOS */
@@ -36,6 +39,12 @@
 .fondo-rosa{
     background-color: var(--rosa);
 }
+.fondo-azul{
+    background-color: var(--azul);
+}
+.fondo-violeta{
+    background-color: var(--violeta);
+}
 
 /* COLORES DE LETRA */
 .color-negro{
@@ -58,6 +67,13 @@
 }
 .color-rosa{
     color: var(--rosa)
+}
+
+.color-azul{
+    color: var(--azul)
+}
+.color-violeta{
+    color: var(--violeta)
 }
 
 
