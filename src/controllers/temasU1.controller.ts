@@ -19,3 +19,7 @@ export function modelo_adquisicion(req:Request, res:Response){
 export function modelo_cognoscitivo(req:Request, res:Response){
     res.render('unidad1/modelo_cognoscitivo.ejs');
 }
+
+export function modelo_agente_inteligente(req:Request, res:Response){
+    res.render('unidad1/modelo_agente_inteligente.ejs');
+}
