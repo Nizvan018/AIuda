@@ -15,3 +15,7 @@ export function proceso_razonamiento(req:Request, res:Response){
 export function modelo_adquisicion(req:Request, res:Response){
     res.render('unidad1/modelo_adquisicion.ejs');
 }
+
+export function modelo_cognoscitivo(req:Request, res:Response){
+    res.render('unidad1/modelo_cognoscitivo.ejs');
+}
