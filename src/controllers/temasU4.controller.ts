@@ -1,5 +1,9 @@
 import { Request, Response } from 'express';
 
-export function definicion_historia(req:Request, res:Response){
-    res.render('unidad2/principios_metodologiaIA');
+export function robotica(req:Request, res:Response){
+    res.render('unidad4/robotica');
+}
+
+export function clasificacion(req:Request, res:Response){
+    res.render('unidad4/clasificacion');
 }
