@@ -32,7 +32,7 @@ app.use('/aspectos_metodologicos_de_IA', temasU2Routes);
 /*unidad 3*/
 app.use('/int', temasU3Routes);
 /*unidad 4*/
-app.use('/Aplicaciones_inteligencia_artificial', temasU4Routes);
+app.use('/aplicaciones_IA', temasU4Routes);
 
 /** STATIC FILES: */
 app.use(express.static(path.join(__dirname, 'public')));

@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { definicion_historia } from '../controllers/temasU4.controller';
+import { clasificacion, robotica } from '../controllers/temasU4.controller';
 
 const router:Router = Router();
 
-router.get('/definicion_historia', definicion_historia);
-
+router.get('/robotica/conceptos_basicos', robotica);
+router.get('/robotica/clasificacion', clasificacion);
 export default router;

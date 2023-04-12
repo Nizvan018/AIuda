@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.1. Robótica</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">Según el artículo "Aplicaciones y avances de la robótica actual" de BBVA Suiza, la róbotica se define como: 
+                "Una rama de diversas ingenierías que se fusiona para ocuparse del diseño, construcción y 
+                aplicación de los robots; aparatos que realizan operaciones o trabajos generalmente en sustitución 
+                de la mano de obra humana."
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a></p>
+
+            <h2 class="color-blanco texto-grande p-arriba-30">4.1.1. Conceptos básicos</h2>
+
+            <p class="p-arriba-10 color-blanco texto-justificado">Los siguientes conceptos han sido tomados del documento "Robotica" del curso de verano del 2005 del 
+                Instituto Tecnológico de Nuevo Laredo, recopilados por el Ing. Takeyas. </p>
+
+            <h3 class="color-blanco p-arriba-30">Robótica:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"La robótica es una ciencia o rama de la tecnología, que estudia el
+                diseño y construcción de máquinas capaces de desempeñar tareas realizadas
+                por el ser humano o que requieren del uso de inteligencia. Las ciencias y
+                tecnologías de las que deriva podrían ser: el álgebra, los autómatas
+                programables, las máquinas de estados, la mecánica o la informática."
+                <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a></p>
+            
+            <h3 class="color-blanco p-arriba-30">Robot:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"Manipulador automático controlado, reprogramable, polivalente, capaz
+                de posicionar y orientar piezas, útiles o dispositivos especiales, siguiendo
+                trayectoria variables reprogramables, para la ejecución de tareas variadas. <br><br>
+                Normalmente tiene la forma de uno o varios brazos terminados en una muñeca.
+                Su unidad de control incluye un dispositivo de memoria y ocasionalmente de
+                percepción del entorno. Normalmente su uso es el de realizar una tarea de
+                manera cíclica, pudiéndose adaptar a otra sin cambios permanentes en su
+                material. "
+                <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a></p>
+
+            <h3 class="color-blanco p-arriba-30">Robot industrial:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"Manipulador multifuncional reprogramable con varios grados
+                de libertad, capaz de manipular materias, piezas, herramientas o dispositivos
+                especiales según trayectorias variables programadas para realizar tareas
+                diversas. <br><br>
+                El robot industrial posee ciertas características antropomórficas, es decir, con
+                características basadas en la figura humana. La característica antropomórfica
+                más común en nuestros días es la de un brazo mecánico, el cual realiza diversas
+                tareas industriales. "
+                <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a></p>
+                
+            <h3 class="color-blanco p-arriba-30">Efector:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"Dispositivo que produce determinados efectos en el entorno, bajo el
+                control del robot".<br><br>
+                Se utilizan principalmente de dos maneras:<br><br>
+                    <li class="color-blanco texto-justificado">Modificar la ubicación del robot respecto de su ambiente.</li>
+                    <li class="color-blanco texto-justificado">Desplazar otros objetos del entorno (Manipulación).
+                    <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+                    </li>
+               </p>
+            
+            <h3 class="color-blanco p-arriba-30">Manipulador:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"Son sistemas mecánicos multifunciónales, con un sencillo sistema
+                de control, que permite gobernar el movimiento de sus elementos."
+                <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a></p>
+            
+            <h3 class="color-blanco p-arriba-30">Grados de libertad:</h3>
+            <p class="p-arriba-10 color-blanco texto-justificado">"Una de las principales características que definen a los
+                robots lo constituye los grados de libertad que posea. Hablar de "grados de
+                libertad" equivale a decir número y tipo de movimientos del manipulador."
+                <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a></p>
+
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (BBVA Suiza, 2022)</p>
+            <p class="cita" id="fuente4-2">2. (Robótica, s.f)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
