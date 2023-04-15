@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad I</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-rosa texto-enorme p-abajo-30">1. Inteligencia Artificial</h1>
+    
+            <h2 class="color-blanco texto-grande">1.6. El modelo de adquisición del conocimiento según la filosofía</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">
+                En el conocimiento se encuentran frente a frente la conciencia y el sujeto del objeto, es decir, el conocimiento se presenta como una relación entre los dos miembros antes mencionados que permanecen en ella eternamente separados uno de otro. La dualidad del sujeto y objeto permanece a la esencia del conocimiento, la función del objeto es aprehender al objeto, mientras que la del objeto es ser aprehensible y aprehendido por el sujeto, de esta forma visto desde el objeto, el conocimiento se presenta como una transferencia de las propiedades del objeto al sujeto.
+                <a class="referencia-rosa" href="#fuente1-1" onclick="cambiarColor('fuente1-1', 'color-rosa')">1</a><br><br>
+                Teoría del conocimiento: Es el intento intelectual de explicar la forma en la que adquirimos el conocimiento del mundo y los procedimientos por los que es generado ese conocimiento, de tal forma que pueda ser valorado como verdadero o falso. <br><br>
+                Conocer: Explicar en qué consiste la acción de conocer es uno de los grandes temas de la filosofía, ya que se intenta explicar cual es la esencia del conocimiento y la relación cognoscitiva entre el hombre y las cosas que lo rodean, por lo que la definición más sencilla nos dice que conocer consiste en obtener una información acerca de un objeto, unos ejemplos serían datos o noticias sobre algo. <br><br>
+                Existen tres niveles en el conocimiento: <br><br>
+                <ul class="color-blanco m-izquierda-20">
+                    <li class="m-abajo-10">Conocimiento sensible: Es aquel que se adquiere a través de la capacitación de un objetos por medio de los sentidos, en el caso de los seres humanos los más desarrollados son el oído y la vista, de esta forma se almacena en la memoria las imágenes de todos los objetos que observamos a diario con sus características.</li>
+                    <li class="m-abajo-10">Conocimiento conceptual: Se trata de aquel que se forma a partir de un conjunto de representaciones definidas como invisibles, inmateriales, universales y esenciales, este conocimiento hace referencia a la universalidad de los conceptos y objetos, aquellos que todos comprendemos de la misma manera.</li>
+                    <li class="m-abajo-10">Conocimiento holístico: La palabra holístico se refiere a esta totalidad percibida en el momento de la intuición. Este conocimiento carece de estructuras, o por lo menos, tiende a prescindir de ellas, es por esta razón que el conocimiento percibido a nivel intuitivo no se puede delimitar, se capta como un elemento en su totalidad, se tiene una vivencia de una presencia, pero sin poder expresarla adecuadamente.</li>
+                </ul>
+            </p>
+            <p class="p-arriba-10 color-blanco texto-justificado">
+                El origen del conocimiento: <br><br>
+                <ul class="color-blanco m-izquierda-20">
+                    <li class="m-abajo-10">Racionalismo: Es la doctrina epistemológica que sostiene que la causa principal del conocimiento reside en el pensamiento, la razón. Afirma que un conocimiento sólo es realmente tal, cuando posee necesidad lógica y validez universal.</li>
+                    <li>Empirismo: Para el empirismo la única causa del conocimiento humano es la experiencia. Según el empirismo, la conciencia cognoscente no obtiene sus conceptos de la razón, sino exclusivamente de la experiencia.</li>
+                </ul>
+            </p>
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-rosa p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente1-1">1. (Inteligencia Artificial, 2013)</p>
+        </section> 
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
