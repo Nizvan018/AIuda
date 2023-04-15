@@ -23,3 +23,7 @@ export function modelo_cognoscitivo(req:Request, res:Response){
 export function modelo_agente_inteligente(req:Request, res:Response){
     res.render('unidad1/modelo_agente_inteligente.ejs');
 }
+
+export function papel_heuristica(req:Request, res:Response){
+    res.render('unidad1/papel_heuristica.ejs');
+}
