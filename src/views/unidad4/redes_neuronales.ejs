@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.2. Redes Neuronales (RN)</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">Según la cátedra sobre redes neurinales de la Universidad Tecnológica Nacional, una red Neuronal
+                puede definirse como: 
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+                 <br><br>
+                <ul class="p-izquierda-30 color-blanco">
+                    <li class="p-abajo-10">"Una nueva forma de computación, inspirada en modelos biológicos"</li>
+                    <li class="p-abajo-10">"Un modelo matemático compuesto por un gran número de
+                        elementos procesales organizados en niveles"</li>
+                    <li class="p-abajo-10">"...un sistema de computación compuesto por un gran número de elementos procesales organizados en niveles"</li>
+                    <li class="p-abajo-10">"Redes neuronales artificiales son redes interconectadas masivamente en
+                        paralelo de elementos simples (usualmente adaptativos) y con organización jerárquica,
+                        las cuales intentan interactuar con los objetos del mundo real del mismo modo que lo
+                        hace el sistema nervioso biológico."</li>
+                </ul></p>
+                <h2 class="color-blanco texto-grande">Ventajas de las redes neuronales</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">
+                Las redes neuronales artificiales tienen muchas características similares a las del cerebro 
+                debido a su constitución y fundamentos. Estas características incluyen el aprendizaje a partir 
+                de la experiencia, la capacidad de generalizar de casos anteriores a nuevos casos, la capacidad 
+                de abstraer características esenciales de entradas que representan información irrelevante, entre 
+                otras. Estas características hacen que las redes neuronales ofrezcan numerosas ventajas en múltiples 
+                áreas, incluyendo: <br><br>
+                <ul class="p-izquierda-30 color-blanco">
+                    <li class="p-abajo-10"><b>Aprendizaje adaptativo: </b> La capacidad de aprender a realizar tareas basadas en un 
+                        entrenamiento o en una experiencia inicial.
+                    </li>
+                    <li class="p-abajo-10"><b>Auto-organización: </b>Una red neuronal puede crear su propia organización o representación de
+                         la información que recibe mediante una etapa de aprendizaje.</li>
+                    <li class="p-abajo-10"><b>Tolerancia a fallos: </b>Incluso si una red neuronal sufre daños parciales, algunas capacidades de la red pueden ser retenidas.</li>
+                    <li class="p-abajo-10"><b>Operación en tiempo real: </b>Los cómputos neuronales pueden ser realizados en paralelo, lo que permite que se diseñen y 
+                        fabriquen máquinas con hardware especial para obtener esta capacidad.</li>
+                    <li class="p-abajo-10"><b>Fácil inserción dentro de la tecnología existente: </b>Se pueden obtener chips especializados para redes neuronales que mejoran 
+                        su capacidad en ciertas tareas, lo que facilita la integración modular en los sistemas existentes.
+                    </li>
+                </ul>
+                
+            </p>
+
+            <h2 class="color-blanco texto-grande p-arriba-30">Conceptos básicos</h2>
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">Aprendizaje adaptativo</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">La capacidad de aprendizaje adaptativo es una de las características más
+                    atractivas de redes neuronales. Esto es, aprenden a llevar a cabo ciertas tareas mediante
+                    un entrenamiento con ejemplos ilustrativos. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Auto-organización</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las redes neuronales emplean su capacidad de aprendizaje adaptativo para
+                    autoorganizar la información que reciben durante el aprendizaje y/o la operación.<br>
+                    Mientras que el aprendizaje es la modificación de cada elemento procesal, la
+                    autoorganización consiste en la modificación de la red neuronal completa para llevar a
+                    cabo un objetivo específico. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Tolerancia a fallos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las redes neuronales fueron los primeros métodos computacionales con la
+                    capacidad inherente de tolerancia a fallos. Comparados con los sistemas computacionales tradicionales, los cuales pierden su funcionalidad cuando sufren un
+                    pequeño error de memoria, en las redes neuronales, si se produce un fallo en un número
+                    no muy grande de neuronas y aunque el comportamiento del sistema se ve influenciado,
+                    no sufre una caída repentina. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Operación en tiempo real</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Una de las mayores prioridades, casi en la totalidad de las áreas de aplicación, es
+                    la necesidad de realizar procesos con datos de forma muy rápida. Las redes neuronales
+                    se adaptan bien a esto debido a su implementación paralela. Para que la mayoría de las
+                    redes puedan operar en un entorno de tiempo real, la necesidad de cambio en los pesos
+                    de las conexiones o entrenamiento es mínimo. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Fácil inserción dentro de la tecnología existente</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las redes neuronales pueden ser entrenadas para una tarea específica y compleja, y para tareas 
+                    más complejas se requieren sistemas de redes interconectadas. Las herramientas computacionales actuales permiten el rápido entrenamiento y transferencia 
+                    de redes neuronales a una implementación de bajo costo en hardware. Esto facilita la integración de redes neuronales en aplicaciones específicas, como 
+                    el control de sistemas existentes, lo que permite mejorar los sistemas de forma incremental mediante la evaluación de cada paso antes de acometer 
+                    un desarrollo más amplio.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Redes neuronales y computadoras digitales</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Los sistemas de computación neuronales difieren de los digitales al no aplicar principios de circuitos 
+                    lógicos o digitales. Las neuronas no pueden ser circuitos de umbral lógico debido a la gran cantidad de entradas variables y el umbral variable en el tiempo. <br>
+                    Por lo tanto, el cerebro funciona como un computador analógico, ya que las neuronas actúan como integradores analógicos y la eficiencia de la sinapsis cambia 
+                    de manera gradual. Los circuitos del cerebro no implementan computación recursiva y, por lo tanto, no son algorítmicos.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Función de entrada (input function)</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">La neurona trata a muchos valores de entrada como si fueran uno solo; esto
+                    recibe el nombre de entrada global.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Función de activación (activation function)</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Una neurona biológica puede estar activa (excitada) o inactiva (no excitada); es
+                    decir, que tiene un “estado de activación”. Las neuronas artificiales también tienen
+                    diferentes estados de activación; algunas de ellas solamente dos, al igual que las
+                    biológicas, pero otras pueden tomar cualquier valor dentro de un conjunto determinado.
+                    La función activación calcula el estado de actividad de una neurona;
+                    transformando la entrada global (menos el umbral, Θi) en un valor (estado) de
+                    activación, cuyo rango normalmente va de (0 a 1) o de (–1 a 1). Esto es así, porque una
+                    neurona puede estar totalmente inactiva (0 o –1) o activa (1). 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Función de salida (output function)</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">El último componente que una neurona necesita es la función de salida. El valor
+                    resultante de esta función es la salida de la neurona i (outi); por ende, la función de
+                    salida determina que valor se transfiere a las neuronas vinculadas. Si la función de
+                    activación está por debajo de un umbral determinado, ninguna salida se pasa a la
+                    neurona subsiguiente. Normalmente, no cualquier valor es permitido como una entrada
+                    para una neurona, por lo tanto, los valores de salida están comprendidos en el rango
+                    [0, 1] o [-1, 1]. También pueden ser binarios {0, 1} o {-1, 1}. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Niveles o capas de una red neuronal</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>De entrada: </b> Es la capa que recibe directamente la información proveniente
+                            de las fuentes externas de la red. 
+                        </li>
+                        <li class="p-abajo-10"><b>Ocultas: </b>
+                       </li>
+                        <li class="p-abajo-10"><b>De salida: </b></li>
+                    </ul>
+
+                </p>
+                <h3 class="color-blanco p-arriba-30">Tipos de neuronas artificiales</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">a
+                </p>
+            </div>
+            
+
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Matich, 2001)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
