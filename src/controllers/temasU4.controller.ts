@@ -14,3 +14,9 @@ export function desarrollos_y_aplicaciones(req:Request, res:Response){
 export function redes_neuronales(req:Request, res:Response){
     res.render('unidad4/redes_neuronales');
 }
+export function clasificacion_rn(req:Request, res:Response){
+    res.render('unidad4/clasificacion_rn');
+}
+export function desarrollos_y_aplicaciones_rn(req:Request, res:Response){
+    res.render('unidad4/desarrollos_y_aplicaciones_rn');
+}

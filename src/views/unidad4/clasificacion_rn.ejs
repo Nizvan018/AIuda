@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.2. Redes Neuronales (RN)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.2.2 Clasificación</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">Según el sitio de Inteligencia-Artificial.dev las redes neuronales pueden
+                clasificarse por capas, por tipos de conexión y grados de conexiones, a continuación se muestra la clasificación 
+                de las redes neuronales.
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+                </p>
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">Clasificación por número de capas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado"> Dentro de esta clasificación se puede dividir a las redes neuronales en dos tipos
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10 texto-justificado"><b>Redes neuronales monocapas: </b> Suelen ser las más sencillas, la capa de entrada no se considera como tal
+                            ya que no realiza cálculos. La capa de entrada se conecta a la capa de neuronas de salida que realiza determinados cálculos. <br>
+                            Según Matich (2001) en este tipo de redes se establecen conexiones entre las neuronas que
+                            pertenecen a la única capa que constituye la red y también meciona que se utilizan en tareas relacionadas con lo que se conoce como 
+                            autoasociaciónv(regenerar información de entrada que se presenta a la red de forma incompleta o distorcionada).
+                            <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+                        </li>
+                        <li class="p-abajo-10 texto-justificado"><b>Redes neuronales multicapas: </b> Entre las conexiones de entrada y salida existen diversas capas de neuronas que sirven
+                            de intermediarias, a estas se les llama "capas ocultas" y pueden o no conectarse entre sí. <br>
+                            Matich 2001, menciona sobre esta clasificación que las redes multicapas son aquellas que disponen de un conjunto de neuronas
+                            agrupadas en varios (2, 3, etc.) niveles o capas, también agrega que para saber a que capa pertenece una neurona basta con fijarse en el origen de
+                            las señales que recibe a la entrada y el destino de la señal de salida.
+                            <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+                            Normalmente,todas las neuronas de una capa reciben señales de entrada desde otra capa anterior (la 
+                            cual está más cerca a la entrada de la red), y envían señales de salida a una capa posterior (que está más cerca a la salida de la red). A estas conexiones se las denomina
+                            conexiones hacia adelante o feedforward.
+                            Sin embargo, en un gran número de estas redes también existe la posibilidad de
+                            conectar la salida de las neuronas de capas posteriores a la entrada de capas anteriores;
+                            a estas conexiones se las denomina conexiones hacia atrás o feedback.
+                            Estas dos posibilidades permiten distinguir entre dos tipos de redes con
+                            múltiples capas: las redes con conexiones hacia adelante o redes feedforward, y las
+                            redes que disponen de conexiones tanto hacia adelante como hacia atrás o redes
+                            feedforward/feedback.
+                       </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-20 borde-blanco fondo-gris-claro"src="../../img/rn1.png" alt="RN1">
+                </div>  <h3 class="color-blanco p-arriba-30">Clasificación por tipos de conexiones</h3>
+                <h4 class="color-blanco p-arriba-30">Conexiones entre neuronas</h4>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La conectividad entre los nodos de una red neuronal está relacionada con la
+                    forma en que las salidas de las neuronas están canalizadas para convertirse en entradas
+                    de otras neuronas. La señal de salida de un nodo puede ser una entrada de otro elemento
+                    de proceso, o incluso ser una entrada de sí mismo (conexión autorrecurrente).
+                    Cuando ninguna salida de las neuronas es entrada de neuronas del mismo nivel o
+                    de niveles precedentes, la red se describe como de conexión hacia delante.
+                    <br><br>
+                    Las redes de propagación hacia atrás que tienen lazos cerrados son llamadas <b>sistemas recurrentes</b>
+                    <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+                </p>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Redes neuronales no recurrentes: </b> Se descubrieron en el año 1980, la información de las 
+                            redes neuronales trabaja en un solo sentido. No existe una realimentación y también carecen de memoria. Este tipo 
+                            de red neuronal no es tan utilizada. <br>
+                            Sin embargo las redes neuronales recurrentes y no recurrentes, también utilizan algoritmos en común como por ejemplo
+                             en la fase de entrenamiento.
+ 
+                        </li>
+                        <li class="p-abajo-10"><b>Redes neuronales recurrentes: </b> las neuronas tienen la posibilidad de realizar conexiones 
+                            realimentación, ya sea entre neuronas de una misma capa o de diferentes capas. La realimentación permite que las redes
+                             neuronales recurrentes, tengan memoria. Las redes neuronales recurrentes tienen mayores ventajas en general y suelen 
+                             ser más potentes, que las redes neuronales no recurrentes. <br><br>
+                       </li>
+                    </ul>
+                </p>
+               
+               
+                <h3 class="color-blanco p-arriba-30">Clasificación por grado de conexiones</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Redes neuronales totalmente conectadas: </b> Las capas anteriores y las capas posteriores, están totalmente conectadas. 
+                            La totalidad de las neuronas están conectadas entre ellas.
+                        </li>
+                        <li class="p-abajo-10"><b>Redes parcialmente conectadas </b> No todas las neuronas están totalmente conectadas entre ellas.
+                       </li>
+                    </ul>
+                </p>
+                <h3 class="color-blanco p-arriba-30">Redes neuronales convuncionales</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La mayor ventaja de las redes neuronales convuncionales, respecto a otros tipos de redes neuronales como las multicapa comunes, es que diferentes partes de la red neuronal, 
+                    se pueden entrenar para tareas diversas. Con esto se consigue aumentar la velocidad de entrenamiento e identificar patrones de una forma más avanzada. Gracias al uso de algoritmos 
+                    para redes convuncionales, se reduce el número de conexiones y de parámetros, por lo que requiere de menor entrenamiento.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Redes neuronales de base radial</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En la Inteligencia Artificial y matemáticas de le denomina a las redes neuronales de base radiales, a las que aplican funciones de base radial como funciones de activación. 
+                    La salida de la red es una combinación lineal de funciones de base radial y parámetros neuronales. Las aplicaciones son diversas, como por ejemplo la aproximación de funciones, 
+                    la predicción de series de tiempo y la clasificación. Esto no quita que también se pueda aplicar para otros casos de uso. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Redes neuronales líquidas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Se trata de una red neuronal, que está configurada para aprender en base a sus experiencias, configurando los parámetros en tiempo real, además de que también se puede emplear con menor
+                     potencia informática. Otra de las ventajas es que pude procesar datos de forma temporal y espacial. La información que puede procesar una red neuronal líquida, puede ser secuencial, como por 
+                     ejemplo el sonido e imágenes, no solo datos estáticos, como otros tipos de redes neuronales más tradicionales.  
+                </p>
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Conoce más sobre la clasificación de las redes neuronales!<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V5BYRPJThjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BCKl8IpCSJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Finance, 2023)</p>
+            <p class="cita" id="fuente4-2">2. (Matich, 2001)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>

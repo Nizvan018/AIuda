@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.2. Redes Neuronales (RN)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.2.3. Desarrollos actuales y aplicaciones</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">Las redes neuronales pueden utilizarse en un gran número y variedad de
+                aplicaciones, tanto comerciales como militares. <br><br>
+                Se pueden desarrollar redes neuronales en un periodo de tiempo razonable, con
+                la capacidad de realizar tareas concretas mejor que otras tecnologías. Cuando se
+                implementan mediante hardware (redes neuronales en chips VLSI), presentan una alta
+                tolerancia a fallos del sistema y proporcionan un alto grado de paralelismo en el
+                procesamiento de datos. Esto posibilita la inserción de redes neuronales de bajo coste en
+                sistemas existentes y recientemente desarrollados. <br><br>
+                La aplicación de cada red neuronal dependerá de su tipo, a continuación se prensentan algunas aplicaciones de las redes neuronales
+                obtenidas del documento <b>Redes Neuronales: Conceptos Básicos y Aplicaciones</b> de Damián Jorge Matich 2001
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+                </p>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">Biología</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Aprender más acerca del cerebro y otros sistemas.
+                        </li>
+                        <li class="p-abajo-10">Obtención de modelos de la retina.
+                       </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn2.jpg" alt="RN2">
+                </div>  
+                
+                <h3 class="color-blanco p-arriba-30">Empresa</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Evaluación de probabilidad de formaciones geológicas y petrolíferas. 
+                        </li>
+                        <li class="p-abajo-10">Identificación de candidatos para posiciones específicas.
+                       </li>
+                        <li class="p-abajo-10">Explotación de bases de datos
+                        </li>
+                        <li class="p-abajo-10">Optimización de plazas y horaros en líneas de vuelo.
+                        </li>
+                        <li class="p-abajo-10">Optimización del flujo del tránsito controlando convenientemente la
+                            temporización de los semáforos.
+                        </li>
+                        <li class="p-abajo-10">Reconocimiento de caracteres escritos.
+                        </li>
+                        <li class="p-abajo-10">Modelado de sistemas para automatización y control.
+                        </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn3.jpg" alt="RN3">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Medio ambiente</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Analizar tendencias y patrones.
+                        </li>
+                        <li class="p-abajo-10">Previsión del tiempo.
+                       </li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn4.jpg" alt="RN3">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Finanzas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Previsión de la evolución de los precios.</li>
+                        <li class="p-abajo-10">Valoración del riesgo de los créditos.</li>
+                        <li class="p-abajo-10">Identificación de falsificaciones.</li>
+                        <li class="p-abajo-10">Interpretación de firmas.</li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn5.jpg" alt="RN5">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Manufacturación</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Robots automatizados y sistemas de control (visión artificial y sensores
+                            de presión, temperatura, gas, etc.).
+                        </li>
+                        <li class="p-abajo-10">Control de producción en líneas de procesos.
+                        </li>
+                        <li class="p-abajo-10">Inspección de la calidad.
+                        </li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn6.jpg" alt="RN6">
+                </div> 
+                <h3 class="color-blanco p-arriba-30">Medicina</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Analizadores del habla para ayudar en la audición de sordos profundos.  
+                        </li>
+                        <li class="p-abajo-10">Diagnóstico y tratamiento a partir de síntomas y/o de datos analíticos
+                            (electrocardiograma, encefalogramas, análisis sanguíneo, etc.).
+                        <li class="p-abajo-10">Monitorización en cirugías.
+                       </li>
+                        </li>
+                        <li class="p-abajo-10">Predicción de reacciones adversas en los medicamentos.
+                       </li> 
+                        </li>
+                        <li class="p-abajo-10">Entendimiento de la causa de los ataques cardíacos.
+                        </li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-20 alto-20 p-20 borde-blanco"src="../../img/rn7.jpg" alt="RN7">
+                </div> 
+                <h3 class="color-blanco p-arriba-30">Militares</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">Clasificación de las señales de radar.</li>
+                        <li class="p-abajo-10">Creación de armas inteligentes.</li>
+                        <li class="p-abajo-10">Optimización del uso de recursos escasos.</li>
+                        <li class="p-abajo-10">Reconocimiento y seguimiento en el tiro al blanco.</li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/rn8.jpg" alt="RN8">
+                </div> 
+                <p class="p-arriba-20 color-blanco texto-justificado">
+                    Gran parte de estas aplicaciones consisten en hacer un reconocimiento de patrones
+                    (buscar un patrón en una serie de ejemplos, clasificar los patrones, completar una señal a partir de valores parciales
+                    o construir un patrón correcto en base a uno distorcionado). <br><br>
+                    La ventaja de las redes neuronales reside en el procesado paralelo, adaptativo y no lineal. <br><br>
+                    El dominio de aplicación de las redes neuronales también se lo puede clasificar
+                    de la siguiente forma: asociación y clasificación, regeneración de patrones, regresión y
+                    generalización, y optimización. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Asociación y clasificación</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En esta aplicación se deben clasificar o reconocer patrones de entrada estáticos o señales temporales, lo que requiere un clasificador capaz de reconocer versiones 
+                    ligeramente distorsionadas del patrón y ser inmune al ruido. Esto es esencial en aplicaciones holográficas, asociativas o regenerativas.
+                    <ul class="p-arriba-10 color-blanco texto-justificado">
+                        <li class="p-abajo-10"><b>Asociación: </b>de especial interés son las dos clases de asociación:
+                            autoasociación y heteroasociación. <br><br>
+                            El problema de la autoasociación es recuperar un patrón enteramente, dada una
+                            información parcial del patrón deseado mientras que la heteroasociación es recuperar un conjunto de patrones B, dado un patrón de ese conjunto. Los pesos en las redes asociativas son a menudo 
+                            predeterminados basados en la regla de Hebb. Normalmente, la autocorrelación del conjunto de patrones almacenado determina 
+                            los pesos en las redes autoasociativas. <br>
+                            Por otro lado, la correlación cruzada de muchas parejas de patrones se usa para determinar los pesos de la red de heteroasociación.
+                        </li>
+                        <li class="p-abajo-10"><b>Clasificación no supervisada: </b>para esta aplicación, los pesos sinápticos de la
+                            red son entrenados por la regla de aprendizaje no supervisado, esto es, la red adapta los
+                            pesos y verifica el resultado basándose únicamente en los patrones de entrada.</li>
+                        <li class="p-abajo-10"><b>Clasificación supervisada: </b> Esta clasificación adopta algunas formas del
+                            criterio de interpolación o aproximación. En muchas aplicaciones de clasificación, por
+                            ejemplo, reconocimiento de voz, los datos de entrenamiento consisten de pares de
+                            patrones de entrada y salida. </li>
+                    </ul>
+                </p>
+                <h3 class="color-blanco p-arriba-30">Regeneración de patrones</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En muchos problemas de clasificación, una cuestión a solucionar es la
+                    recuperación de información, esto es, recuperar el patrón original dada solamente una   
+                    información parcial. Hay dos clases de problemas: temporales y estáticos. El uso
+                    apropiado de la información contextual es la llave para tener éxito en el reconocimiento.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Regeneración y generalización</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    El objetivo de la generalización es dar una respuesta correcta a la salida para un
+                    estímulo de entrada que no ha sido entrenado con anterioridad. El sistema debe inducir
+                    la característica saliente del estímulo a la entrada y detectar la regularidad. Tal habilidad
+                    para el descubrimiento de esa regularidad es crítica en muchas aplicaciones. Esto hace
+                    que el sistema funcione eficazmente en todo el espacio, incluso cuando ha sido
+                    entrenado por un conjunto limitado de ejemplos. 
+                </p>
+                <h3 class="color-blanco p-arriba-30">Optimización</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Las Redes Neuronales son herramientas interesantes para la optimización de
+                    aplicaciones, que normalmente implican la búsqueda del mínimo absoluto de una
+                    función de energía. Para algunas aplicaciones, la función de energía es fácilmente
+                    deducible; pero en otras, sin embargo, se obtiene de ciertos criterios de coste y
+                    limitaciones especiales.
+                </p>
+                   
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Checa los vídeos que tenemos para ti !<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rgpbScmhXag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TJoyak6SIEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jaEIv_E29sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Matich, 2001)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
