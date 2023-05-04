@@ -30,7 +30,7 @@ app.use('/inteligencia_artificial', temasU1Routes);
 /*unidad 2*/
 app.use('/aspectos_metodologicos_de_IA', temasU2Routes);
 /*unidad 3*/
-app.use('/int', temasU3Routes);
+app.use('/reglas_busquedas', temasU3Routes);
 /*unidad 4*/
 app.use('/aplicaciones_IA', temasU4Routes);
 
