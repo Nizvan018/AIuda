@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.3. Visión artificial</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.3.1 Conceptos básicos</h2>
+            <div class="p-izquierda-30">
+                <p class="p-arriba-10 color-blanco texto-justificado">Según el sitio de solución ingenieril, la visión artificial puede definirse como 
+                    "Rama de la inteligencia artificial que busca reproducir la función de la vista mediante procesos y herramientas tecnológicas." <br>
+                    También menciona que para aplicar técnicas de visión artificial debe tener un propósito, es decir, en base a la información adquirida mediante
+                     imágenes y su procesamiento, se deben tomar acciones o plasmar la información crítica que estamos buscando. 
+                     <br><br>A continuación, se muestran algunos conceptos básicos de la visión artificial:
+                    <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+                    </p>
+                <h3 class="color-blanco p-arriba-30">Matemáticas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las técnicas de procesamiento de imágenes se basan en matemáticas, desde la eliminación de 
+                    ruido hasta la detección de objetos y colores, por lo que es importante conocer su origen para aplicarlas en algoritmos.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Procesamiento de imágenes</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las imágenes deben pasar por un procesamiento previo para eliminar el ruido y resaltar la información relevante, como los bordes o colores, 
+                    antes de indicar al Sistema de Visión lo que debe hacer con ellas. Por ello, el procesamiento de imágenes es fundamental en este proceso.
+                </p>
+                
+                <h3 class="color-blanco p-arriba-30">Aprendizaje de máquina</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">El aprendizaje de máquina es esencial para el desarrollo de la visión artificial, 
+                    ya que permite que los programas se adapten a múltiples escenarios en lugar de estar limitados a uno. Cuanto más se alimente el programa, 
+                    más escenarios podrá aceptar, lo que lo hace más funcional.
+                </p>
+                <h3 class="color-blanco p-arriba-30">Imagen digital</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Las imágenes digitales se representan como matrices de renglones y columnas, donde cada espacio 
+                    es un pixel que contiene un nivel de gris o intensidad de color. Por ejemplo, una imagen de 5x5 consta de 25 pixeles con su respectiva intensidad de 
+                    color, representados en una matriz como los valores 21, 55, 88, 19, etc.
+                    <br><br>
+                    Por ejemplo tenemos la siguiente imagen:
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-20 borde-blanco"src="../../img/va5.jpg" alt="va5">
+                </div> 
+                <p class="p-arriba-10 color-blanco texto-justificado">Si hacemos zoom en una parte en específico, podemos analizar minuciosamente que cada pixel tiene una intensidad de gris distinta.
+
+
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-20 borde-blanco"src="../../img/va6.jpg" alt="va6">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Ventajas de la visión humana</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Se basa en el conocimiento previo.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>El ojo humano tiene alta resolución de captura.</b> 
+                       </li>
+                        <li class="p-abajo-10"><b>Adaptable a una gran variedad de situaciones.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Alta capacidad de reconocimiento de objetos.</b> 
+                        </li>
+                    </ul>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/va1.jpg" alt="va1">
+                </div> 
+                <h3 class="color-blanco p-arriba-30">Desventajas de la visión humana</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>No puede medir la magnitud de intensidad de colores.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>El ojo humano se cansa y puede llegar a perder visión.</b> 
+                       </li>
+                        <li class="p-abajo-10"><b>Sensible a efectos ópticos.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>No puede medir distancias geométricas con exactitud.</b> 
+                        </li>
+                    </ul>
+                </p>
+                
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/va2.jpg" alt="va2">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Ventajas de la visión artificial</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Los efectos ópticos no le afectan.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Puede medir magnitudes físicas con una alta precisión.</b> 
+                       </li>
+                        <li class="p-abajo-10"><b>Podemos analizar muchos factores de la imagen y obtener gran cantidad de información.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Al no cansarse como en el caso del ojo humano, puede realizar tareas rutinarias por mucho tiempo.</b> 
+                        </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/va3.jpg" alt="va3">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">Desventajas de la visión artificial</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Dependiendo del tipo de cámara y del procesamiento de la imagen puede haber pérdida de información.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Para medir objetos, los cambios de escala son un gran problema.</b> 
+                       </li>
+                        <li class="p-abajo-10"><b>Los cambios de iluminación pueden alterar toda la interpretación de la información si no se programa para varios escenarios.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>No detecta movimiento directamente.<b> 
+                        </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/va4.jpg" alt="va4">
+                </div> 
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    A continuación te dejamos unos videos para mayor comprensión !<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/huPO8RxvuEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/meNN1TRyojY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+    </div>
+    
+    <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+        <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+        <p class="cita" id="fuente4-1">1. (Conceptos básicos de Visión Artificial, 2020)</p>
+    </section>
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>

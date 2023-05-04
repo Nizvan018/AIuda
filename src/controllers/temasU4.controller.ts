@@ -20,3 +20,9 @@ export function clasificacion_rn(req:Request, res:Response){
 export function desarrollos_y_aplicaciones_rn(req:Request, res:Response){
     res.render('unidad4/desarrollos_y_aplicaciones_rn');
 }
+export function vision_artificial(req:Request, res:Response){
+    res.render('unidad4/vision_artificial');
+}
+export function desarrollos_y_aplicaciones_va(req:Request, res:Response){
+    res.render('unidad4/desarrollos_y_aplicaciones_va');
+}
