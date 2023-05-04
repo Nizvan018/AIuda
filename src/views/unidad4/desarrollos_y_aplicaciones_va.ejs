@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.3. Visión artificial</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.3.2 Desarrollos actuales y aplicaciones</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">La visión artificial es una tecnología fiable y madura que puede ahorrarnos tiempo, mejorar 
+                la calidad y reducir costos. Aquí presentamos 7 aplicaciones que debes conocer.
+            <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+            </p>
+
+            <div class="p-izquierda-30">              
+                <h3 class="color-blanco p-arriba-30">Visión artificial para la Detección de defectos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La detección de defectos es una de las aplicaciones más habituales de la visión artificial. 
+                    Con ella, podemos detectar defectos en producción como rajas en metales, defectos de pintura 
+                    o malas impresiones en tamaños menores a 0,05mm, superando la capacidad del ojo humano. 
+                    Las cámaras de visión requieren de un algoritmo específico diseñado y entrenado para cada aplicación 
+                    en particular, que actúa como el cerebro inteligente capaz de diferenciar defectos de objetos normales 
+                    a través de imágenes con y sin defectos.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Visión artificial para la Metrología</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La visión artificial es una herramienta valiosa para la medición de piezas y componentes. 
+                    Esta tecnología sustituye los complejos equipos de metrología láser o palpadores, permitiendo medir con 
+                    precisión utilizando la iluminación adecuada para cada tipo de material y ambiente de trabajo. 
+                    Para lograr mediciones precisas es esencial un buen ajuste de la referencia. La visión artificial permite 
+                    medir tamaños de piezas variables, rectitud, paralelismo y otras características clave.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30"> Visión artificial para la Detección de intrusos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">A través de cámaras hiperespectrales se puede diferenciar 
+                    entre materiales, lo que permite productos más seguros para el consumidor, especialmente en el ámbito de 
+                    la alimentación. Estas cámaras miden la longitud de onda para diferenciar entre tipos de material, como frutas y piedras, 
+                    plásticos y metales, entre otros.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Visión artificial para la Verificación de montajes</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La visión artificial se utiliza para comprobar el correcto montaje de piezas en procesos cada vez más complejos. 
+                    Permite verificar que cada pieza está en su lugar y que el montaje final es correcto. Es útil en la fabricación de 
+                    maquinaria, equipos, placas electrónicas y otros montajes complejos, reduciendo los tiempos de ciclo de operaciones y 
+                    los tiempos de reoperación.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Visión artificial para Lector de pantallas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En ocasiones, una cámara de visión artificial puede ser utilizada para extraer datos de una pantalla de visualización cuando no es posible extraerlos de otro modo, 
+                    ya sea porque el sistema es cerrado o incompatible. La cámara identifica las regiones de interés en la pantalla, y utiliza un algoritmo de reconocimiento de caracteres (OCR) 
+                    para extraer la información útil, como temperaturas, códigos o tensiones.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Visión artificial para la Lectura de códigos y caracteres (OCR)</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Los diseñadores suelen cambiar rápidamente de tipografía, pero podemos utilizar algoritmos de reconocimiento de 
+                    caracteres para tener un sistema de reconocimiento por visión artificial entrenado, que sea capaz de leer cualquier tipografía, 
+                    incluso letras escritas a mano. Este sistema es muy robusto y funciona perfectamente para cualquier diseño.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Visión artificial + robótica para bin picking</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Una aplicación muy solicitada es la combinación de robótica colaborativa y visión artificial para realizar el bin picking de piezas en un entorno caótico. 
+                    En este caso, las piezas están desordenadas y se necesita optimizar las trayectorias y detectar las coordenadas de agarre. Para ello, el robot necesita ayuda 
+                    para identificar las piezas y su ubicación, de modo que pueda decidir la mejor forma de agarrarlas.
+
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-20 borde-blanco fondo-gris-claro"src="../../img/rn1.png" alt="RN1">
+                </div>   
+
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    A continuación te dejamos unos videos para mayor comprensión !<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M6oDiCQCins" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CU24iC3grq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (AtriaInnovation, 2019)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
