@@ -29,7 +29,7 @@
         <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
             <h1 class="color-rosa texto-enorme p-abajo-30">1. Inteligencia Artificial</h1>
     
-            <h2 class="color-blanco texto-grande">1.9. El papel de la heurística</h2>
+            <h2 class="color-blanco texto-grande"><span class="color-rosa">1.9.</span> El papel de la heurística</h2>
             <p class="p-arriba-10 color-blanco texto-justificado">
                 Derivada del verbo griego heuriskein (ayudar a encontrar), la palabra heurística hace referencia a la disciplina, el arte o la ciencia del descubrimiento.<a class="referencia-rosa" href="#fuente1-1" onclick="cambiarColor('fuente1-1', 'color-rosa')">1</a> 
                 Esta consiste en la capacidad de realizar innovaciones positivas con el fin de alcanzar algún objetivo. Bransford y Stein (1984) define cinco pasos de este proceso: 
@@ -44,11 +44,19 @@
             </p>
             <p class="p-arriba-10 color-blanco texto-justificado">
                 Aplicado a las ciencias computacionales, el método heurístico se aplica cuando no existe una solución óptima bajo las restricciones dadas, por lo tanto, se trata de programas que buscan algoritmos eficientes que ofrezcan soluciones óptimas. Es por ello que, las inteligencias artificiales se consideran heurísticas por naturaleza, ya que, se encargan de descubrir todos aquellos patrones que permiten dar con una solución igual o mejor de la que daría un ser humano. <br><br>
-                Existen diferentes tipos de algoritmos heurísticos: <br><br>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-10 borde-blanco"src="../../img/heuristica.webp" alt="ROBOT3">
+                </div>
+
+                <span class="p-arriba-10 color-blanco">
+                    Existen diferentes tipos de algoritmos heurísticos: <br><br>
+                </span>
+
                 <ul class="color-blanco p-izquierda-20">
-                    <li class="p-abajo-10">Algoritmos de exploración de alternativas: Aquellos que proporcionan caminos alternativos en la ejecución de nuestro programas.</li>
-                    <li class="p-abajo-10">Algoritmos A*: Son aquellos que buscan la ruta de menor coste entre dos puntos.</li>
-                    <li>Algoritmos de búsqueda local: Se enfocan en el estado actual y se mueven hacia un estado vecino.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Algoritmos de exploración de alternativas:</span> Aquellos que proporcionan caminos alternativos en la ejecución de nuestro programas.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Algoritmos A*:</span> Son aquellos que buscan la ruta de menor coste entre dos puntos.</li>
+                    <li><span class="texto-peso-600">Algoritmos de búsqueda local:</span> Se enfocan en el estado actual y se mueven hacia un estado vecino.</li>
                 </ul>
             </p>
         </section>
@@ -59,7 +67,7 @@
         </section> 
     </div>
 
-    <%- include('../componentes/footer.ejs')  %>
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
     
     <script src="/assets/js/fuentes.js"></script>
 </body>
