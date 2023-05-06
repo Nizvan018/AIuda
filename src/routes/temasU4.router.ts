@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { clasificacion, clasificacion_rn, desarrollos_y_aplicaciones, desarrollos_y_aplicaciones_rn, desarrollos_y_aplicaciones_va, redes_neuronales, robotica, vision_artificial } from '../controllers/temasU4.controller';
+import { clasificacion, clasificacion_rn, desarrollos_y_aplicaciones, desarrollos_y_aplicaciones_ld, desarrollos_y_aplicaciones_rn, desarrollos_y_aplicaciones_va, logica_difusa, redes_neuronales, robotica, vision_artificial } from '../controllers/temasU4.controller';
 
 const router:Router = Router();
 
@@ -11,4 +11,6 @@ router.get('/redes_neuronales/clasificacion',clasificacion_rn)
 router.get('/redes_neuronales/desarrollos_y_aplicaciones_rn',desarrollos_y_aplicaciones_rn)
 router.get('/vision_artificial/conceptos_basicos',vision_artificial)
 router.get('/vision_artificial/desarrollos_y_aplicaciones',desarrollos_y_aplicaciones_va)
+router.get('/logica_difusa/conceptos_basicos',logica_difusa)
+router.get('/logica_difusa/desarrollos_y_aplicaciones_ld',desarrollos_y_aplicaciones_ld)
 export default router;
