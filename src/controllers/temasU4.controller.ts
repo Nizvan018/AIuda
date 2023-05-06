@@ -26,3 +26,9 @@ export function vision_artificial(req:Request, res:Response){
 export function desarrollos_y_aplicaciones_va(req:Request, res:Response){
     res.render('unidad4/desarrollos_y_aplicaciones_va');
 }
+export function logica_difusa(req:Request, res:Response){
+    res.render('unidad4/logica_difusa');
+}
+export function desarrollos_y_aplicaciones_ld(req:Request, res:Response){
+    res.render('unidad4/desarrollos_y_aplicaciones_ld');
+}

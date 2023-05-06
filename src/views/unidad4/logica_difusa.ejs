@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+            <h2 class="color-blanco texto-grande">4.4. Lógica difusa (Fuzzy Logic)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.4.1 Conceptos básicos</h2>
+            
+            <p class="p-arriba-10  p-abajo-20 color-blanco texto-justificado">Según el libro "Lógica Difusa Una introducción práctica" de Gónzales C. La 
+                lógica difusa es una lógica multivaluada que permite representar matemáticamente la incertidumbre y la vaguedad,
+                proporcionando herramientas formales para su tratamiento.
+            <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+            </p>
+
+            <div style="text-align:center;">
+                <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/ld1.webp" alt="ld1">
+            </div> 
+
+            <p class="p-arriba-10  p-abajo-20 color-blanco texto-justificado">
+                Cualquier problema del mundo puede resolverse como dado un conjunto de variables de
+                entrada, obtener un valor adecuado de variables de salida. <br>
+                La lógica difusa permite establecer este mapeo de una forma adecuada, atendiendo a criterios
+                de significado (y no de precisión).
+            </p>
+
+            <p class="p-arriba-10  p-abajo-20 color-blanco texto-justificado">
+                La teoría que explica y ejemplifica la lógica difusa es planteada por el Dr. Zadeh.
+                El autor le dio el nombre de “lógica difusa” al tipo de razonamientos que derivó y
+                ejemplificó así: “se dio una larga discusión entre dos hombres acerca de cuál de
+                dos mujeres era la más atractiva. Cada uno consideraba que su mujer era más 
+                bonita que la del otro. Por supuesto no existe forma objetiva de medir la belleza. El
+                concepto de "belleza" varía mucho entre personas, culturas y tiempos.
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+            </p>
+            <div style="text-align:center;">
+                <img class="ancho-40 alto-40 p-20 borde-blanco"src="../../img/ld2.jpg" alt="ld2">
+            </div>  
+
+            <p class="p-arriba-10  p-abajo-20 color-blanco texto-justificado">
+                A pesar de que la discusión se prolongó no se llegó a conclusión alguna. Esta discusión
+                disparó el deseo de Zadeh de lograr expresar numéricamente conceptos difusos
+                como "más bonita" o "menos bonita”. Es decir, expresar
+                numéricamente cada uno de los puntos entre los cuales está comprendido los
+                extremos de una proporción matemática. Cada uno de los segmentos de la razón,
+                la proporción y variación. <br>La aplicación de la teoría de lógica difusa se representa lingüísticamente con una
+                sentencia condicional, si… entonces teniendo una estructura similar a la de una diagrama de flujo. <br><br>
+                El sistema general de la lógica difusa tiene como base el conocimiento. Por ende
+                es el esquema que sintetiza en unas reglas de tipo IF-THEN. Para
+                describir de manera precisa este tipo de razonamientos los humanos utilizan
+                expresiones lingüísticas que describen situaciones y fenómenos, las expresiones
+                que se utilizan tienen grado de vaguedad que por esas mismas características
+                habían sido imposibles de cuantificar en términos matemáticos.
+            </p>   
+            <div style="text-align:center;">
+                <img class="ancho-30 alto-30 p-20 borde-blanco fondo-gris-claro"src="../../img/ld3.png" alt="ld3">
+            </div>   
+            <p class="p-arriba-10  p-abajo-20 color-blanco texto-justificado">
+                Para implementar un sistema difuso existen dos arquitecturas
+                básicas, <b>la arquitectura Mandami</b>, y <b>la arquitectura Takagi-Sugeno-Kang </b> 
+            </p>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">ARQUITECTURA MAMDANI</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La arquitectura Mamdani consiste en una serie de reglas si-entonces de la forma: <br><br>
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Si X es FRÍO entonces Z es ABRIR</b> 
+                        </li>
+                    </ul>
+                </p>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Donde tanto FRÍO como ABRIR son conjuntos difusos, X son los atributos
+                    observables o mesurables del sistema (temperatura) y Z son los atributos
+                    controlables del sistema (válvula), de estas se derivan las siguientes expresiones:  <br><br>
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10">E(t) es negativo cuando la temperatura del invernadero T(t) es mayor que la
+                            temperatura de referencia Td(t).                            
+                        </li>
+                        <li class="p-abajo-10">E(t) es cero cuando Td(t)=T(t).
+                        </li>
+                        <li class="p-abajo-10">E(t) es positivo cuando Td(t)>T(t).
+                        </li>
+                        <li class="p-abajo-10">dE(t) es negativa cuando el error anterior es mayor que el error actual y se tiene
+                            una gráfica de pendiente positiva
+                        </li>
+                        <li class="p-abajo-10">
+                            dE(t) es positiva cuando el error anterior es menor que el error actual y se tiene una gráfica de pendiente negativa
+                        </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/ld4.jpg" alt="ld4">
+                </div>   
+                <h3 class="color-blanco p-arriba-30">ARQUITECTURA TAKAGI-SUGENO-KANG</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La arquitectura TSK consiste en una serie de reglas si-entonces de la forma:<br><br>
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b> Si X(t) es A entonces Z es Y=kio + ki1X(t) donde A es un conjunto difuso</b> 
+                        </li>
+                        <li class="p-abajo-10">X son los atributos observables o mesurables del sistema,
+                        </li>
+                        <li class="p-abajo-10">Z son los atributos controlables del sistema y Y es una ecuación de salida lineal.</li>
+                    </ul>
+                </p>  
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Para la solución del problema invernadero las ecuaciones de salida tendrán la siguiente forma:<br><br>
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Si E(t) es A y dE(t) es B entonces u(t)= kio + ki1E(t)+ ki2dE(t)</b> 
+                        </li>
+                    </ul>
+                </p>  
+
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La simulación en MATLAB es idéntica a la de la arquitectura Mamdani con la
+                    diferencia de que el editor FIS se elige la arquitectura Sugeno y las funciones de
+                    membresía de salida son las constantes seleccionadas. 
+                </p> 
+
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/ld5.webp" alt="ld5">
+                </div> 
+
+            </div>
+
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Una introducción a la lógica difusa!<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ayfoP7Tqa-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xLFNUo0mTZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Juan Hurtado, 2014)</p>
+            <p class="cita" id="fuente4-2">2. (Gónzales C, s.f)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
