@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.6 Sistemas Expertos (SE)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.6.3 Desarrollos actuales y aplicaciones</h2>
+
+            <p class="p-arriba-10 color-blanco texto-justificado">A continuación se nombran algunos ejemplos de la aplicación de los sistemas expertos: 
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+            </p>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">MYCIN</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Es uno de los primeros sistemas expertos basados en el encadenamiento hacia atrás. <br><br>
+                    Este sistema es capaz de identificar varias bacterias que pueden causar infecciones agudas y también puede recomendar medicamentos según el peso del paciente.
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/se8.jpg" alt="se8">
+                </div>       
+
+                <h3 class="color-blanco p-arriba-30">DENDRAL</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Es un sistema experto basado en inteligencia artificial utilizado para el análisis químico.  <br><br>
+                    El sistema puede predecir la estructura molecular, basado en los datos espectrográficos de una sustancia.
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-40 alto-40 p-20 borde-blanco"src="../../img/se7.webp" alt="se7">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">R1 / XCON</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Es usado en el campo de la informática. Es capaz de seleccionar un software específico para generar un sistema 
+                    informático a gusto del usuario.
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-40 alto-40 p-20 borde-blanco"src="../../img/se6.jpg" alt="se6">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">PXDES</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Es un gran sistema para la medicina moderna. Puede determinar fácilmente el tipo y 
+                    el grado de cáncer de pulmón en un paciente a través de un análisis de datos.
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-40 alto-40 p-20 borde-blanco"src="../../img/se5.jpg" alt="se5">
+                </div> 
+
+                <h3 class="color-blanco p-arriba-30">CaDet</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">También es un sistema de apoyo clínico que podría identificar el cáncer en etapas tempranas.
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">DXplain</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Otro sistema de apoyo clínico, pero en este caso, 
+                    tiene la capacidad de sugerir una variedad de enfermedades según los hallazgos del médico.
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-40 alto-40 p-20 borde-blanco"src="../../img/se9.jpg" alt="se9">
+                </div> 
+
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En general, en cuanto a las aplicaciones de estos sistemas expertos, algunas de las más populares son: 
+                    <ul class="p-izquierda-30 color-blanco p-arriba-20">
+                        <li class="p-abajo-10"><b>Gestión de la información.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Hospitales e instalaciones médicas.</b> 
+                       </li>
+                        <li class="p-abajo-10"><b>Gestión de servicios de ayuda.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Evaluación del desempeño de los empleados.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Análisis de préstamos.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b> Detección de virus.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Útil para proyectos de reparación y mantenimiento.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b> Optimización de almacenes.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Planificación y programación.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>La configuración de objetos fabricados.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Toma de decisiones financieras Publicación de conocimiento.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b> Monitorización y control de procesos.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b> Supervisar el funcionamiento de la planta y el controlador.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Bolsa de comercio.</b> 
+                        </li>
+                        <li class="p-abajo-10"><b>Horarios de aerolínea y horarios de carga.</b> 
+                        </li>
+                    </ul>
+                </p>
+
+                <p class="p-arriba-10 color-blanco texto-justificado">Un sistema experto utiliza hechos y heurísticas para resolver problemas complejos de toma de decisiones, 
+                    brindando beneficios clave como decisiones de mayor calidad, reducción de costos, consistencia, confiabilidad y velocidad mejoradas. Sin embargo, 
+                    es importante tener en cuenta que un sistema experto no puede ofrecer soluciones creativas y puede requerir un mantenimiento costoso. 
+                    A pesar de eso, sus aplicaciones son amplias y son herramientas útiles para garantizar información rápida y precisa.
+                </p>
+               
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-20 borde-blanco"src="../../img/se10.jpg" alt="se10">
+                </div>       
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    A continuación te dejamos unos videos para mayor comprensión !<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DGBDaL9okkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eFFI2wfuJsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Sistemas Expertos: Definición, Aplicaciones y Ejemplos, s. f.)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>

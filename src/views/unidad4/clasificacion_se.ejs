@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.6 Sistemas Expertos (SE)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.6.2 Clasificación</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">
+                En la actualidad, los sistemas expertos pueden dividirse en dos categorías principales: 
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a><br><br>
+                <ul class="p-izquierda-30 color-blanco">
+                    <li class="p-abajo-10"><b>Sistemas expertos basados en reglas.</b> 
+                    </li>
+                    <li class="p-abajo-10"><b>Sistemas expertos basados en árboles.</b> 
+                   </li>
+                </ul>
+                </p>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">Sistemas expertos basados en reglas</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Se trata de sistemas basados en reglas clásicas bien conocidas por el mundo de la informática en la forma IF (condición) y THEN (acción). 
+                    Dado un conjunto de hechos, los sistemas expertos son capaces de deducir nuevos hechos gracias a sus reglas.
+                    <br><br>
+                    Ejemplo:<br><br>
+                    <b class="color-violeta">SI DOLOR DE CABEZA + SI FRÍO + SI TEMPERATURA CORPORAL A 38 grados centígrados… ENTONCES GRIPE.</b>
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/se3.jpg" alt="se3">
+                </div> 
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En la práctica, el sistema analiza si se dan todas las condiciones (dolor de cabeza, y resfrío y fiebre) para deducir con alta probabilidad que la conclusión, 
+                    la respuesta al problema, es la gripe.
+                </p>
+                
+                <h3 class="color-blanco p-arriba-30">Sistemas expertos basados en árboles</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    En este caso, el sistema experto utiliza un conjunto de datos y deducciones para crear un árbol clasificatorio que representa las posibles soluciones. Este tipo de sistema experto, 
+                    basado en un árbol, es capaz de reconocer problemas a partir de secuencias de hechos, decisiones o acciones. A partir de una situación inicial, se ramifican todas las posibles opciones 
+                    (condiciones SI o alternativas Y/O) en situaciones y acciones hasta llegar a una conclusión final. <br><br>
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Sistema experto basado en casos: </b> Son los sistemas que parten de problemas que ya han sido resueltos en un dominio de aplicación y mediante un proceso de adaptación, 
+                            encuentran la solución óptima a un nuevo problema.
+                        </li>
+                        <li class="p-abajo-10"><b>Sistema experto basado en redes bayesianas: </b>Son sistemas que poseen gráficos de variables conocidas y relaciones de dependencia entre ellas. El objetivo es determinar la 
+                            probabilidad de aquellas variables que no son conocidas. 
+                        </li>
+                    </ul>
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-20">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco fondo-gris-claro"src="../../img/se4.webp" alt="se4">
+                </div>       
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Aprende más sobre la clasificación de los SE!<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ikg8EBkXR-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (InnovaciónDigital & InnovaciónDigital, 2023)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>

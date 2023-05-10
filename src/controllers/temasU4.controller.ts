@@ -38,3 +38,12 @@ export function pln(req:Request, res:Response){
 export function desarrollos_y_aplicaciones_pln(req:Request, res:Response){
     res.render('unidad4/desarrollos_y_aplicaciones_pln');
 }
+export function sistemas_expertos(req:Request, res:Response){
+    res.render('unidad4/sistemas_expertos');
+}
+export function clasificacion_se(req:Request, res:Response){
+    res.render('unidad4/clasificacion_se');
+}
+export function desarrollos_y_aplicaciones_se(req:Request, res:Response){
+    res.render('unidad4/desarrollos_y_aplicaciones_se');
+}

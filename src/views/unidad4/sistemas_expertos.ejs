@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.6 Sistemas Expertos (SE)</h2>
+            <h2 class="color-blanco texto-grande p-arriba-30">4.6.1 Conceptos básicos</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">
+                La Inteligencia artificial es la simulación de la inteligencia humana. Los sistemas informáticos intentan simular el funcionamiento del cerebro humano a través de las redes neuronales.
+                Estos sistemas son desarrollados para dominar un conocimiento en particular, que en el caso de un humano u organización serían considerados expertos, por eso se les conoce como sistemas expertos.
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+            </p>
+
+            <div style="text-align:center;">
+                <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/se1.jpg" alt="se1">
+            </div>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">¿Qué son los sitemas expertos?</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Son sistemas basados en computadoras, interactivos y confiables, que pueden tomar decisiones y resolver problemas complejos. La toma de 
+                    decisiones se considera el más alto nivel de inteligencia y experiencia humana.
+                </p>
+                          
+                <h3 class="color-blanco p-arriba-30">Componentes de los sistemas expertos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Base de conocimiento: </b> En este componente se almacena el conocimiento en un dominio específico, 
+                            incluyendo hechos, reglas, procedimientos y datos relevantes para el problema a resolver. Actúa como un repositorio de conocimiento obtenido de diversos expertos en el campo.
+                        </li>
+                        <li class="p-abajo-10"><b>Motor de inferencia: </b> El motor del sistema experto es el cerebro que interpreta y aplica las reglas de la base de conocimientos. 
+                            Su objetivo es encontrar soluciones relevantes para el problema del usuario al obtener el conocimiento relevante de la base de conocimientos y usarlo para inferir nuevos hechos.
+                        </li>
+                        <li class="p-abajo-10"><b>Módulo de adquisición de conocimiento y aprendizaje: </b>Es la parte de estos sistemas que permite que el sistema experto adquiera cada 
+                            vez más conocimiento de diversas fuentes y lo almacene en la base de conocimiento.
+                        </li>
+                        <li class="p-abajo-10"><b>Interfaz de usuario: </b>El módulo de interfaz del sistema experto permite a los usuarios no expertos interactuar con el sistema y encontrar soluciones a problemas. 
+                            Recibe consultas legibles del usuario, las pasa al motor de inferencia y muestra los resultados obtenidos después de que los otros componentes entran en funcionamiento. En resumen, 
+                            es una interfaz que facilita la comunicación entre el usuario y el sistema experto.
+                        </li>
+                        <li class="p-abajo-10"><b>Módulo de explicación: </b>En este módulo, el sistema experto proporciona al usuario una explicación precisa de cómo llegó a una conclusión particular, 
+                            argumentando los resultados presentados con exactitud.
+                        </li>
+                    </ul>
+                </p>
+
+                <h3 class="color-blanco p-arriba-30">Objetivo de los sistemas expertos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">Un sistema experto tiene como objetivo ayuda a encontrar la solución óptima a un problema concreto sin tener que recurrir a un experto en la materia. 
+                    Un procedimiento que el sistema experto puede llevar a cabo incluso con datos incompletos, trabajando con datos cualitativos más que cuantitativos, utilizando la llamada lógica difusa, es decir, un razonamiento "aproximado" que conduce a resultados altamente probables.
+                    <a class="referencia-violeta" href="#fuente4-2" onclick="cambiarColor('fuente4-2', 'color-violeta')" >2</a>
+                </p>
+
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-50 p-30 borde-blanco"src="../../img/se2.jpeg" alt="se2">
+                </div>
+
+                <p class="p-arriba-10 color-blanco texto-justificado">Una peculiaridad de los sistemas expertos tiene que ver con la "explicación" de las decisiones a las que llega el sistema: un sistema experto siempre es capaz de mostrar los pasos lógicos que subyacen a las decisiones 
+                    tomadas, lo que se llama Glass Box, un aspecto muy importante si se comparan estos sistemas con las redes neuronales y el Deep Learning más modernos, para los que se habla de Black Box, 
+                    sistemas con los que no es posible trazar el proceso inductivo y deductivo que lleva a una salida, ya sea una acción o una decisión.
+                </p>
+
+                      
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    A continuación te dejamos unos videos para mayor comprensión !<br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mcxn2zlTLOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUsicE_TUpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Sistemas Expertos: Definición, Aplicaciones y Ejemplos, s. f.)</p>
+            <p class="cita" id="fuente4-2">2. (InnovaciónDigital & InnovaciónDigital, 2023)</p>
+        </section>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
