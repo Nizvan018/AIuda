@@ -32,3 +32,9 @@ export function logica_difusa(req:Request, res:Response){
 export function desarrollos_y_aplicaciones_ld(req:Request, res:Response){
     res.render('unidad4/desarrollos_y_aplicaciones_ld');
 }
+export function pln(req:Request, res:Response){
+    res.render('unidad4/pln');
+}
+export function desarrollos_y_aplicaciones_pln(req:Request, res:Response){
+    res.render('unidad4/desarrollos_y_aplicaciones_pln');
+}
