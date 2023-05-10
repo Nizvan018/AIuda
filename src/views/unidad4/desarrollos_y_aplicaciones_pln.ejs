@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+    <div class="ancho-100 d-flex flex-column centro-horizontal">
+        <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+            <h1 class="color-violeta texto-enorme p-abajo-30">4. Aplicaciones con técnicas de la Inteligencia Artificial</h1>
+
+            <h2 class="color-blanco texto-grande">4.5.2. Desarrollos actuales y aplicaciones.</h2>
+            <p class="p-arriba-10 color-blanco texto-justificado">El corrector ortográfico de tu procesador de textos o el autocorrector de tu teléfono utilizan técnicas 
+                de procesamiento de lenguaje natural, pero las aplicaciones van mucho más allá:
+                <a class="referencia-violeta" href="#fuente4-1" onclick="cambiarColor('fuente4-1', 'color-violeta')" >1</a>
+            </p>
+
+            <div class="p-izquierda-30">
+                <h3 class="color-blanco p-arriba-30">Clasificación de documentos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    La tarea de clasificar grandes cantidades de documentos según su temática o estilo puede agilizarse con sistemas de PLN.
+                </p>
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/pln5.png" alt="pln5">
+                </div>  
+                
+                <h3 class="color-blanco p-arriba-30">Análisis del sentimiento y de la opinión</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Los comentarios en redes sociales sobre productos o servicios son muy relevantes para las empresas y los sistemas de PLN permiten extraer información relevante.
+                </p>
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/pln6.webp" alt="pln6">
+                </div>  
+
+                <h3 class="color-blanco p-arriba-30">Comparación de textos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Los sistemas de PLN permiten hallar patrones en textos y detectar coincidencias entre ellos, lo que facilita la detección de plagios y el control de calidad.
+                </p>
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/pln7.jpg" alt="pln7">
+                </div>  
+                
+                <h3 class="color-blanco p-arriba-30">Anonimización de documentos</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    A través de sistemas de PLN pueden procesarse documentos para identificar y eliminar las menciones a datos personales, asegurando así la privacidad de personas e instituciones.
+                </p>
+                <div style="text-align:center;" class="p-arriba-10">
+                    <img class="ancho-30 alto-30 p-20 borde-blanco"src="../../img/pln8.webp" alt="pln8">
+                </div>  
+                
+               
+                <h3 class="color-blanco p-arriba-30">Herramientas para el procesamiento del lenguaje natural</h3>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    <ul class="p-izquierda-30 color-blanco">
+                        <li class="p-abajo-10"><b>Natural Language Toolkit (NLTK): </b>Esta biblioteca de Python cuenta con una estructura modular que facilita las funciones del PLN, 
+                            como el etiquetado y la clasificación, entre otros.
+                        </li>
+                        <li class="p-abajo-10"><b>MonkeyLearn: </b>Es una plataforma de PLN que dispone de modelos para tareas de análisis de textos o de sentimientos, de clasificación 
+                            de temas o de extracción de palabras clave.
+                        </li>
+                        <li class="p-abajo-10"><b>IBM Watson: </b>Es un conjunto de servicios de IA almacenados en la nube de IBM que ofrece sistemas de PLN, permitiendo la identificación y 
+                            la extracción de categorías, sentimientos, entidades, etc.
+                        </li>
+                        <li class="p-abajo-10"><b>Google Cloud Natural Language: </b>Esta API de lenguaje natural proporciona varios modelos para el análisis de sentimientos, la clasificación 
+                            de contenidos y la extracción de entidades, entre otros.
+                        </li>
+                        <li class="p-abajo-10"><b>Amazon Comprehend: </b>Es un servicio de PLN integrado en la infraestructura de Amazon Web Services para el análisis de sentimientos, 
+                            el modelado de temas o el reconocimiento de entidades, entre otras.
+                        </li>
+                        <li class="p-abajo-10"><b>SpaCy: </b>Es una de las bibliotecas de código abierto para PLN con Python más recientes y destaca por su usabilidad y 
+                            por estar diseñada para analizar grandes volúmenes de datos.
+                        </li>
+                        <li class="p-abajo-10"><b>GenSim: </b>Es una librería de Python especializada que se ocupa del modelado de temas, el reconocimiento de 
+                            similitudes entre textos o la navegación entre diferentes documentos.
+                        </li>
+
+                    </ul>
+                </p>     
+            </div>
+
+            <section name="videos"class="d-flex flex-column contenido-principal contenido-temas ancho-100 p-20">
+           
+                <h2 class="color-blanco texto-grande p-arriba-30">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Conoce más de PLN! <br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9w0FO9b9Ba8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPpVTAkou5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+            
+        </section>
+        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+            <p class="cita" id="fuente4-1">1. (Iberdrola, 2021)</p>
+        </section>
+    </div>
+
+    <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+    <script src="/assets/js/fuentes.js"></script>
+</body>
+</html>
