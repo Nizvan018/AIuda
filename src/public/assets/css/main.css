@@ -11,6 +11,10 @@ body{
     min-height: 100vh;
     height: 100%;
 }
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 .contenido-principal{
     min-height: calc(100% - 70px);
     height: calc(100% - 70px);
