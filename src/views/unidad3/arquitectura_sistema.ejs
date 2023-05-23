@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-amarillo texto-enorme p-abajo-30">3. Reglas y Busqueda</h1>
+
+                <h2 class="color-blanco texto-grande">3.6 Arquitectura de un sistema de Producción (SP) o sistemas basados en reglas, (SBR)</h2>
+                <h2 class="color-blanco texto-grande p-arriba-30"></h2>
+                <div class="p-izquierda-30">
+                    <p class="p-arriba-10 color-blanco texto-justificado">Los sistemas basados en reglas son un enfoque procedimental de representación 
+                        del conocimiento que se centra en representar y soportar las relaciones inferenciales del algoritmo. Una de sus principales ventajas
+                         es que representan de forma natural el conocimiento explícito de los expertos, ya que su estructura "Si... entonces..." Se asemeja 
+                         a la forma en que los expertos humanos describen el proceso de resolución de problemas. Además, todas las reglas tienen la misma 
+                         estructura y son piezas de conocimiento independientes, lo que facilita su gestión y permite trabajar con conocimiento incompleto 
+                         e incertidumbre.
+                         <!-- <a class="referencia-amarillo" href="#fuente3-1"
+                            onclick="cambiarColor('fuente3-1', 'color-amarillo')">1</a> -->
+                    </p>
+
+                    <div style="text-align:center;" class="p-arriba-10">
+                        <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/Unidad3Imagen9.jpg" alt="pln2">
+                    </div>
+
+                    <p class="p-arriba-10 color-blanco texto-justificado">Sin embargo, una de las principales desventajas de los sistemas basados en reglas
+                         es que las interacciones a larga distancia entre la red de reglas pueden ser opacas, lo que dificulta el análisis y comprensión del
+                          razonamiento global del sistema. Además, las estrategias de búsqueda que utilizan son ineficientes y, en sistemas con muchas reglas,
+                           pueden llegar a ser inviables en problemas del mundo real. Asimismo, los sistemas de reglas no son capaces de aprender de la experiencia,
+                            lo que limita su capacidad de adaptación y evolución.
+
+                         <!-- <a class="referencia-amarillo" href="#fuente3-1"
+                            onclick="cambiarColor('fuente3-1', 'color-amarillo')">1</a> -->
+                    </p>
+
+                    <div style="text-align:center;" class="p-arriba-10">
+                        <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/Unidad3Imagen4.jpg" alt="pln2">
+                    </div>
+
+                    <p class="p-arriba-10 color-blanco texto-justificado">Las bases de conocimiento se crean a partir de dos tipos de elementos básicos: los datos
+                         y el conocimiento. Los datos son hechos o evidencias, mientras que el conocimiento está representado por un conjunto de reglas que rigen
+                          las relaciones entre los datos. Una vez que tenemos esta información almacenada, necesitamos un mecanismo para manipular automáticamente
+                           sus componentes y extraer conclusiones. Este mecanismo se llama motor de inferencia, y a partir de la base de conocimiento, obtiene nuevas
+                            conclusiones que amplían el conjunto de hechos de la base de conocimiento. Por lo tanto, tanto los hechos iniciales como las conclusiones
+                             derivadas forman parte de los hechos disponibles en un momento dado, lo que resulta en un proceso dinámico en el que el conocimiento se
+                              va generando poco a poco.
+                         <a class="referencia-amarillo" href="#fuente3-1"
+                           onclick="cambiarColor('fuente3-1', 'color-amarillo')">1</a> 
+                   </p>
+
+                   <div style="text-align:center;" class="p-arriba-10">
+                       <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/Unidad3Imagen10.jpg" alt="pln2">
+                   </div>
+
+                </div>
+
+            </section>
+
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-amarillo p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente3-1">(Caparrini, 2019) </p>
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+</body>
+
+</html>
