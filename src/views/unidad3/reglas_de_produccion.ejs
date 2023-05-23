@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>AIuda: Unidad IV</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-amarillo texto-enorme p-abajo-30">3. Reglas y Busqueda</h1>
+
+                <h2 class="color-blanco texto-grande">3.3 Reglas de Producción</h2>
+                <h2 class="color-blanco texto-grande p-arriba-30"></h2>
+                <div class="p-izquierda-30">
+                    <p class="p-arriba-10 color-blanco texto-justificado">Las reglas de producción se utilizan como un
+                        formalismo para representar el conocimiento en
+                        sistemas expertos. Estas reglas se han utilizado desde hace tiempo en teoría de autómatas,
+                        gramáticas formales y en el diseño de lenguajes de
+                        programación. Originalmente, las producciones eran reglas gramaticales para manipular cadenas de
+                        símbolos.
+                        <!-- <a class="referencia-amarillo" href="#fuente1-1"
+                            onclick="cambiarColor('fuente1-1', 'color-amarillo')">1</a>-->
+                    </p>
+
+                    <div style="text-align:center;" class="p-arriba-10">
+                        <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/Unidad3Imagen6.jpg" alt="pln2">
+                    </div>
+
+                    <p class="p-arriba-10 color-blanco texto-justificado">En la actualidad, se utilizan para describir
+                        el comportamiento de los sistemas expertos y su capacidad
+                        para tomar decisiones basadas en el conocimiento que poseen. Las reglas de producción son un
+                        elemento fundamental en el diseño de sistemas expertos y su
+                        eficacia en la toma de decisiones depende en gran medida de la calidad y cantidad de
+                        conocimiento que se les proporcione.
+                        <a class="referencia-amarillo" href="#fuente3-1"
+                            onclick="cambiarColor('fuente3-1', 'color-amarillo')">1</a>
+                    </p>
+
+                    <div style="text-align:center;" class="p-arriba-10">
+                        <img class="ancho-30 alto-30 p-20 borde-blanco" src="../../img/Unidad3Imagen7.jpg" alt="pln2">
+                    </div>
+
+                    <p class="p-arriba-10 color-blanco texto-justificado">Los sistemas de producción utilizan formalismos lógicos para resolver
+                         problemas mediante la combinación de hechos y reglas. Estos sistemas se pueden comparar con la búsqueda en espacio de
+                          estados, donde los hechos se corresponden con el estado del problema y las reglas con los operadores de búsqueda. Un
+                           problema en el contexto de los sistemas de producción se compone de tres elementos: la base de hechos, que contiene 
+                           proposiciones o predicados que describen el problema en cuestión; la base de conocimiento (o de reglas), 
+                           que contiene fórmulas condicionales que indican cómo se pueden resolver los problemas; y el motor de inferencia, 
+                           que ejecuta el formalismo y obtiene la cadena de razonamiento que permite resolver el problema.
+                        <a class="referencia-amarillo" href="#fuente3-2"
+                            onclick="cambiarColor('fuente3-2', 'color-amarillo')">2</a>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-amarillo p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente3-1">1. (Morales, s.f.) </p>
+                <p class="cita" id="fuente3-2">2. (Béjar, 2022)</p>
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+</body>
+
+</html>
