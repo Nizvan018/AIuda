@@ -3,18 +3,18 @@ header{
     height: 70px;
     padding: 0 20px
 }
-header a{
+header label, header a{
     text-decoration: none;
     transition: 0.2s;
     padding: 6px 0;
 }
-.opciones a:hover{
+.opciones label:hover, .opciones a:hover{
     padding: 6px 12px;
     color: white;
     font-weight: 500;
     border-bottom: 1px white solid;
 }
-header a:hover{
+header label:hover, header a:hover{
     padding: 6px 14px;
 }
 header .barrita{
@@ -33,12 +33,12 @@ header .opciones{
     header a.titulo span{
         font-size: 20px;
     }
-    header .opciones a{
+    header .opciones label, header .opciones a{
         font-size: 12px;
         padding: 6px 8px;
         margin-right: 10px;
     }
-    header a:hover{
+    header label:hover, header a:hover{
         padding: 6px 8px;
     }
     header .barrita{

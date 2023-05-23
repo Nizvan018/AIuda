@@ -1,0 +1,20 @@
+.contenedor-respuesta{
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0px 8px 4px black;
+}
+.contenedor-respuesta .linea-rosa{
+    padding: 16px;
+    border-radius: 8px;
+    background:  #bd3e76;
+    background-size: auto 50%;
+}
+/* .contenedor-respuesta::before{
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: white;
+} */
