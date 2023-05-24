@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 body{
+    position: absolute;
+    top: 70px;
     min-width: 100%;
     width: 100%;
     min-height: 100vh;
