@@ -42,6 +42,9 @@ body{
 .izquierda-vertical{
     justify-content: left;
 }
+.derecha-vertical{
+    justify-content: right;
+}
 .centro-vertical{
     justify-content: center;
 }
@@ -307,4 +310,7 @@ a.referencia:hover{
 }
 p.cita{
     transition: 0.5s;
+}
+.cursor-pointer{
+    cursor: pointer;
 }

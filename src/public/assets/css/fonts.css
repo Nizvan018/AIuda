@@ -60,3 +60,6 @@
 .texto-justificado{
     text-align: justify;
 }
+.texto-no-decorado{
+    text-decoration: none;
+}
