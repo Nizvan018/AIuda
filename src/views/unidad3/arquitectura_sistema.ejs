@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -90,21 +91,33 @@
                     </div>
     
                 </section>
-                <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
-                    <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/reglas_busquedas/semantica_reglas">
-                        <i class="uil uil-previous texto-enorme color-amarillo"></i>
-                        <label class="cursor-pointer color-blanco texto-peso-500">Tema anterior</label>
-                    </a>
-                    <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aplicaciones_IA/robotica/conceptos_basicos">
-                        <label class="cursor-pointer color-blanco texto-peso-500">Unidad 4</label>
-                        <i class="uil uil-step-forward texto-enorme color-amarillo"></i>
-                    </a>
-                </section>
+               
 
                 </div>
 
             </section>
 
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-amarillo texto-enorme p-abajo-30">Pon a prueba tus conocimientos</h2>
+                <p class="color-blanco texto-grande texto-justificado">Selecciona el ejemplo de una regla de producción</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Estoy planeando un viaje a la playa para las vacaciones de verano.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-verde')"> Si el cliente hace una pregunta sobre el estado de su pedido, entonces proporcionar el número de seguimiento y la fecha estimada de entrega.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Voy a visitar a mis abuelos este fin de semana.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Necesito comprar algunos ingredientes para preparar la cena de esta noche.</div>
+                </div>
+            </section>
+
+            <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/reglas_busquedas/semantica_reglas">
+                    <i class="uil uil-previous texto-enorme color-amarillo"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema anterior</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aplicaciones_IA/robotica/conceptos_basicos">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Unidad 4</label>
+                    <i class="uil uil-step-forward texto-enorme color-amarillo"></i>
+                </a>
+            </section>
 
             <section name="Fuentes"
                 class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
@@ -116,6 +129,7 @@
         <!-- <%- include('../componentes/footer.ejs')  %> -->
 
         <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
 </body>
 
 </html>
