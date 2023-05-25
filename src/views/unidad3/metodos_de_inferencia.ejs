@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -186,6 +187,17 @@
                 </div>
 
             </section>
+
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-amarillo texto-enorme p-abajo-30">Pon a pruba tus conocimientos</h2>
+                <p class="color-blanco texto-grande texto-justificado">Es un ejemplo de una regla de eliminación </p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">P1: Tengo tarea P2: No tengo tarea C:Tendré tarea</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">P1:Entro a la página de AIuda P2:No entiendo nada C:Repruebo la materia</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-verde')">P1: Estudio y aprendo C:Estudio C:Aprendo</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">P1:Quiero dormir P2: Quiero comer C: Quiero dormir o comer</div>
+                </div>
+            </section>
             
 
             <section name="Fuentes"
@@ -198,6 +210,7 @@
         <!-- <%- include('../componentes/footer.ejs')  %> -->
 
         <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
 </body>
 
 </html>

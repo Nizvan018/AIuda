@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -115,6 +116,7 @@
             
         </section>
         
+              
         <!--
         <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
             <h3 class="color-amarillo p-abajo-20 texto-grande">Referencias</h3>
@@ -123,7 +125,18 @@
     </div>
 
     <!-- <%- include('../componentes/footer.ejs')  %> -->
-
+    <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+        <h2 class="color-amarillo texto-enorme p-abajo-30">Pregunta</h2>
+        <p class="color-blanco texto-grande texto-justificado">¿Cuál es la función de la representación declarativa?</p>
+        <div class="contenedor-respuestas">
+            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Expresar las interacciones entre fragmentos de conocimiento, pero tiene la desventaja de que es difícil de modificar una vez que se ha creado.</div>
+            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Hacer que la representación mixta o heurística sea muy útil en aplicaciones de IA donde se requiere un equilibrio entre estas dos cualidades.</div>
+            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Crear fragmentos de conocimiento que son independientes unos de otros, lo que hace que sean fácilmente modificables.</div>
+            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Describir el comportamiento de los sistemas expertos y su capacidad para tomar decisiones basadas en el conocimiento que poseen.</div>
+        </div>
+    </section>
     <script src="/assets/js/fuentes.js"></script>
+    <script src="/assets/js/preguntas.js"></script>
+
 </body>
 </html>
