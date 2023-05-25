@@ -1,20 +1,8 @@
 import { Router } from 'express';
-import { aspectos_metodologicos } from '../controllers/temasU2.controller';
-
-
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
-//OLIVER :D             AZUUUUUUUUUUUUUUUUUUUUUUUUL
+import { principios_y_metodologia } from '../controllers/temasU2.controller';
 
 const router:Router = Router();
 
-router.get('/aspectos_metodologicos_de_IA', aspectos_metodologicos);
+router.get('/principios_y_metodologia', principios_y_metodologia);
 
 export default router;
