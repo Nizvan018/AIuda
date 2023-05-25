@@ -11,6 +11,7 @@
     --azul: #3a86ff;
     --rosa: #bd3e76;
     --violeta: #8338ec;
+    --verde: #47A992;
     
 }
 
@@ -45,6 +46,9 @@
 .fondo-violeta{
     background-color: var(--violeta);
 }
+.fondo-verde{
+    background-color: var(--verde);
+}
 
 /* COLORES DE LETRA */
 .color-negro{
@@ -75,5 +79,7 @@
 .color-violeta{
     color: var(--violeta)
 }
-
+.color-verde{
+    color: var(--verde);
+}
 
