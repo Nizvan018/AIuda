@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
+
+    <title>AIuda: Unidad II</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/header.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-azul texto-enorme p-abajo-30">2. Representación del conocimiento, razonamiento y los
+                    Aspectos Metodológicos.</h1>
+
+                <h2 class="color-blanco texto-grande"><span class="color-azul">2.1.</span> Principios y Metodología</h2>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    La Inteligencia Artificial (IA) es un campo de estudio fascinante que busca desarrollar sistemas
+                    capaces de emular ciertas habilidades humanas, como el razonamiento y la toma de decisiones basadas
+                    en el conocimiento. Una parte fundamental de la IA es la representación del conocimiento y los
+                    aspectos metodológicos asociados.<br>
+
+                    En la IA, existen diversos principios y metodologías que se utilizan para representar y razonar
+                    sobre el conocimiento. Estas herramientas permiten a los sistemas de IA adquirir, almacenar y
+                    utilizar el conocimiento de manera efectiva para realizar tareas inteligentes.
+                    <a class="referencia-azul" href="#fuente2-1"
+                        onclick="cambiarColor('fuente2-1', 'color-azul')">1</a><br><br>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-70 alto-70 p-10 borde-blanco" src="../../img/ia_principios.jpg" alt="IA"><br><br>
+                </div>
+
+                <h3 class="color-blanco texto-grande">Principios:</h3> <br>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+
+                    En el campo de la Inteligencia Artificial (IA), existen principios fundamentales que se utilizan
+                    para representar el conocimiento y permitir el razonamiento inteligente de los sistemas. Estos
+                    principios
+                    son herramientas clave que permiten a los sistemas de IA adquirir y utilizar el conocimiento de
+                    manera
+                    efectiva. Entre los principios más importantes se encuentran:<br>
+                </p>
+                <ol class="p-izquierda-20 color-blanco">
+                    <li class="p-abajo-10"><span class="texto-peso-600">Lógica:</span> La lógica se usa en la IA para
+                        representar conocimiento y sacar conclusiones a partir de reglas y premisas existentes. La
+                        lógica de primer orden y
+                        la lógica proposicional son dos formas comunes de lógica utilizadas en la IA.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Redes Semánticas:</span>Son gráficos que
+                        representan el conocimiento con nodos y enlaces, mostrando conexiones entre
+                        conceptos y entidades. Este
+                        enfoque es útil para representar conocimientos estructurados y relaciones complejas.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Marcos (Frames):</span>Son
+                        estructuras de datos que organizan el conocimiento en categorías y subcategorías, definiendo
+                        conceptos más generales en términos de conceptos más específicos.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Reglas de producción:</span> Las reglas de
+                        producción son instrucciones "si-entonces" que permiten sacar conclusiones basadas en
+                        condiciones específicas.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Ontologías:</span> Las ontologías son modelos
+                        formales que describen entidades, propiedades y relaciones en un dominio específico, ayudando al
+                        razonamiento y la comunicación entre sistemas de IA.</li>
+                </ol>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    Estos principios proporcionan fundamentos sólidos para la representación del conocimiento y el
+                    razonamiento en la IA, permitiendo a los sistemas adquirir, almacenar y utilizar conocimiento de
+                    manera eficiente.
+                    <a class="referencia-azul" href="#fuente2-2"
+                        onclick="cambiarColor('fuente2-2', 'color-azul')">2</a><br><br>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-10 borde-blanco" src="../../img/ia_machine_learning.jpg" alt="IA">
+                </div>
+
+
+                <h3 class="color-blanco texto-grande">Metodologías:</h3><br>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    Las metodologías desempeñan un papel fundamental en el desarrollo de sistemas de Inteligencia
+                    Artificial (IA) y permiten abordar diferentes enfoques para representar el conocimiento, razonar y
+                    tomar decisiones. Algunas de las metodologías más relevantes son:
+                </p>
+                <ol class="p-izquierda-20 color-blanco">
+                    <li class="p-abajo-10"><span class="texto-peso-600">Enfoque basado en reglas:</span> Este enfoque
+                        implica la creación de un conjunto de reglas explícitas que guían el razonamiento y la toma de
+                        decisiones del sistema. Las reglas se definen manualmente por expertos en el dominio y se
+                        utilizan para representar el conocimiento y las estrategias de resolución de problemas.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Aprendizaje automático (Machine
+                            Learning):</span> El aprendizaje automático es una metodología clave en la IA, donde los
+                        sistemas son capaces de aprender y mejorar automáticamente a través de la experiencia y los
+                        datos. Se utilizan algoritmos y modelos estadísticos para entrenar a los sistemas en la
+                        detección de patrones y la toma de decisiones.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Enfoque basado en casos:</span> Este enfoque
+                        implica el almacenamiento y reutilización de casos previos para resolver problemas similares en
+                        el futuro. Los casos anteriores se utilizan como base de conocimiento para proporcionar
+                        soluciones a nuevos problemas.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Sistemas expertos:</span> Los sistemas expertos
+                        son sistemas de IA que emulan la capacidad de razonamiento y toma de decisiones de un experto
+                        humano en un dominio específico. Utilizan reglas y conocimiento experto para resolver problemas
+                        y proporcionar recomendaciones.</li>
+
+                    <p class="p-arriba-10 color-blanco texto-justificado">
+                        Estas metodologías ofrecen diferentes enfoques para abordar la representación del conocimiento,
+                        el razonamiento y la toma de decisiones en la IA, y su elección dependerá de las necesidades y
+                        características del problema que se pretende resolver.
+                    <a class="referencia-azul" href="#fuente2-2"
+                        onclick="cambiarColor('fuente2-2', 'color-azul')">2</a><br><br>
+                    </p>
+                </ol>
+            </section>
+            <section name="Videos" class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-grande p-arriba-30">Videos sobre el tema</h2>
+                    <p class="p-arriba-10 color-blanco texto-justificado">
+                        Nunca está de más aprender más<br><br>
+                    </p>
+                    <div style="text-align:center;">
+                        <iframe width="426" height="240" src="https://www.youtube.com/embed/oT3arRRB2Cw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen=""></iframe>
+                        
+                        <iframe width="426" height="240" src="https://www.youtube.com/embed/Sb8XVheowVQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </section>
+            <section
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex derecha-vertical">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/inteligencia_artificial/habilidades_proceso">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
+                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
+                </a>
+            </section>
+
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-enorme p-abajo-30">Preguntas</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál de los siguientes principios de
+                    representación del conocimiento es utilizado en la IA para inferir nuevas conclusiones a partir de
+                    reglas y premisas existentes?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Redes Semánticas
+                    </div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Reglas de producción
+                    </div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Lógica</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Marcos (Frames)</div>
+                </div><br><br>
+
+                <p class="color-blanco texto-grande texto-justificado">¿Qué metodología en la Inteligencia Artificial
+                    implica el almacenamiento y reutilización de casos previos para resolver problemas similares en el
+                    futuro?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Aprendizaje
+                        automático (Machine Learning)</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Enfoque basado en
+                        casos</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Enfoque basado en
+                        reglas</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Sistemas expertos
+                    </div>
+                </div>
+            </section>
+            
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-azul p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente2-1">1. Russell, S. J., Norvig, P., Davis, E., & Genesereth, M. (2016).
+                    Artificial Intelligence: A Modern Approach. Pearson.</p>
+                <p class="cita" id="fuente2-2">2. Brachman, R. J., & Levesque, H. J. (2004). Knowledge Representation
+                    and Reasoning. Morgan Kaufmann.</p>
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
+</body>
+
+</html>

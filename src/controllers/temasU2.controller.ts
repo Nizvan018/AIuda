@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
 
-export function aspectos_metodologicos(req:Request, res:Response){
-    res.render('unidad2/aspectos_metodologicos_de_IA');
+export function principios_y_metodologia(req:Request, res:Response){
+    res.render('unidad2/principios_metodologiaIA.ejs');
 }
