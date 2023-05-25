@@ -1,13 +1,35 @@
-.contenedor-respuesta{
+.contenedor-respuestas .respuesta{
     border-radius: 8px;
     color: white;
     box-shadow: 0 0px 8px 4px black;
-}
-.contenedor-respuesta .linea-rosa{
     padding: 16px;
     border-radius: 8px;
-    background:  #bd3e76;
-    background-size: auto 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contenedor-respuestas .rosa{
+    border-left: 8px solid #bd3e76;
+}
+.contenedor-respuestas .azul{
+    border-left: 8px solid #3a86ff;
+}
+.contenedor-respuestas .amarillo{
+    border-left: 8px solid #ff914d;
+}
+.contenedor-respuestas .violeta{
+    border-left: 8px solid #8338ec;
+}
+.contenedor-respuestas .rosa:hover{
+    border-left: 24px solid #bd3e76;
+}
+.contenedor-respuestas .azul:hover{
+    border-left: 24px solid #3a86ff;
+}
+.contenedor-respuestas .amarillo:hover{
+    border-left: 24px solid #ff914d;
+}
+.contenedor-respuestas .violeta:hover{
+    border-left: 24px solid #8338ec;
 }
 /* .contenedor-respuesta::before{
     display: block;
