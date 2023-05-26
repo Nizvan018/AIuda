@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
+
+    <title>AIuda: Unidad II</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/headerU2.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-azul texto-enorme p-abajo-30">2. Representación del conocimiento, razonamiento y los
+                    Aspectos Metodológicos.</h1>
+
+                <h2 class="color-blanco texto-grande"><span class="color-azul">2.5.</span> Razonamiento monótono.</h2>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    El razonamiento monotónico es un enfoque fundamental en el campo de la inteligencia artificial que
+                    se utiliza para el procesamiento del conocimiento y la toma de decisiones. En contraste con el
+                    razonamiento no monotónico, que permite la revisión de conclusiones previas en función de nueva
+                    información, el razonamiento monotónico asume que la adición de nueva información no invalida las
+                    conclusiones anteriores.<br><br>
+                    En el razonamiento monotónico, las inferencias se realizan de manera lineal y progresiva. Se parte
+                    de un conjunto de premisas y, a través de un proceso lógico, se llega a conclusiones basadas en esas
+                    premisas. Las reglas lógicas y las estructuras de conocimiento juegan un papel fundamental en el
+                    razonamiento monotónico, ya que permiten establecer relaciones causales y deductivas entre los
+                    elementos del conocimiento.
+                    <a class="referencia-azul" href="#fuente2-1"
+                        onclick="cambiarColor('fuente2-1', 'color-azul')">1</a><br><br>
+                </p>
+
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-10 borde-blanco" src="../../img/am_produccion.jpg" alt="IA"><br><br>
+                </div>
+
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    Una característica importante del razonamiento monotónico es su capacidad para mantener la
+                    coherencia y la consistencia en el proceso de inferencia. Esto significa que si una conclusión es
+                    válida en un momento dado, seguirá siendo válida incluso después de agregar más información. Por
+                    ejemplo, si se sabe que todos los seres humanos son mortales y se tiene la premisa de que Juan es un
+                    ser humano, se puede concluir de manera monotónica que Juan es mortal. Esta conclusión se mantiene
+                    incluso si se agrega información adicional.<br><br>
+                    El razonamiento monotónico se utiliza en diversos dominios de la inteligencia artificial. En la
+                    representación del conocimiento, se utiliza para capturar y organizar información de manera
+                    coherente y consistente, permitiendo que los sistemas de IA razonen sobre ese conocimiento de manera
+                    lógica. En los sistemas expertos, se emplea para el desarrollo de reglas y mecanismos de inferencia
+                    que permiten a los sistemas emular el razonamiento de un experto en un dominio específico.<br><br>
+                    Es importante tener en cuenta que el razonamiento monotónico tiene sus limitaciones. Debido a su
+                    naturaleza progresiva y la asunción de que las nuevas premisas no invalidan las conclusiones
+                    anteriores, puede no ser adecuado para situaciones en las que se requiere un razonamiento no
+                    monotónico. Por ejemplo, en casos donde nuevas evidencias pueden refutar o contradecir conclusiones
+                    previas, el razonamiento monotónico puede conducir a resultados incorrectos o no deseados.
+                    <a class="referencia-azul" href="#fuente2-2" onclick="cambiarColor('fuente2-2', 'color-azul')">2</a>
+                </p>
+
+            </section>
+            <section name="Videos"
+                class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-grande">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Nunca está de más aprender más<br><br>
+                </p>
+                <div style="text-align:center;">
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/EZ-A2Wj-6CA" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe>
+                </div>
+            </section>
+            
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-enorme p-abajo-30">Pregunta</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál es una característica fundamental del razonamiento monotónico en inteligencia artificial?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Permite la revisión de conclusiones anteriores </div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Es adecuado para situaciones donde se requiere un razonamiento no monotónico</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Mantiene la coherencia y consistencia en el proceso de inferencia</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Utiliza reglas probabilísticas para el procesamiento del conocimiento</div>
+                </div><br><br>
+            </section>
+
+            <section
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/aspectos_metodologicos/redes_semanticas">
+                    <i class="uil uil-previous texto-enorme color-azul"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema anterior</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/aspectos_metodologicos/otras_logicas">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
+                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
+                </a>
+            </section>
+            
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-azul p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente2-1">1. Russell, S. J., Norvig, P., Davis, E., & Genesereth, M. (2016).
+                    Artificial Intelligence: A Modern Approach. Pearson.</p>
+                <p class="cita" id="fuente2-2">2. Brachman, R. J., & Levesque, H. J. (2004). Knowledge Representation
+                    and Reasoning. Morgan Kaufmann.</p>
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
+</body>
+
+</html>

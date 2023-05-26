@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
+
+    <title>AIuda: Unidad II</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/headerU2.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-azul texto-enorme p-abajo-30">2. Representación del conocimiento, razonamiento y los
+                    Aspectos Metodológicos.</h1>
+
+                <h2 class="color-blanco texto-grande"><span class="color-azul">2.9.</span> Teorema de Bayes.</h2>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    El teorema de Bayes es un concepto fundamental en la teoría de la probabilidad y tiene una amplia
+                    aplicación en el campo del razonamiento probabilístico y la inteligencia artificial. Fue
+                    desarrollado por el matemático y estadístico británico Thomas Bayes en el siglo XVIII y se basa en
+                    el cálculo de probabilidades condicionales.
+                    <br><br>
+                    El teorema de Bayes establece una relación entre la probabilidad condicional de un evento A dado un
+                    evento B y la probabilidad condicional de ese evento B dado el evento A. Se formula matemáticamente
+                    de la siguiente manera:
+                </p>
+                    <div style="text-align:center;">
+                        <img class="ancho-50 alto-50 p-10 borde-blanco" src="../../img/am_bayes.jpg" alt="IA">
+                    </div>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    Donde:
+                    <br>
+                </p>
+                <ul class="p-izquierda-20 color-blanco">
+                    <li class="p-abajo-10"><span class="texto-peso-600">P(A|B) </span> representa la probabilidad del
+                        evento A dado que ha ocurrido el evento B.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">P(B|A) </span> representa la probabilidad del
+                        evento B dado que ha ocurrido el evento A.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">P(A) y P(B) </span> representan las
+                        probabilidades de los eventos A y B, respectivamente.</li>
+                </ul>
+                
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    El teorema de Bayes permite actualizar nuestras creencias o probabilidades iniciales sobre un evento
+                    A, en función de nueva evidencia proporcionada por el evento B. Esto se logra multiplicando la
+                    probabilidad previa de A (P(A)) por la probabilidad de que ocurra B dado A (P(B|A)), y dividiendo el
+                    resultado entre la probabilidad total de que ocurra B (P(B)). En otras palabras, el teorema de Bayes
+                    nos permite calcular la probabilidad posterior de un evento en función de la probabilidad inicial y
+                    la evidencia observada. <br><br>
+                    Este teorema es especialmente útil en situaciones donde la evidencia puede ser incompleta o
+                    contradictoria. Nos permite actualizar nuestras creencias o estimaciones iniciales a medida que se
+                    recopila nueva información. Es ampliamente utilizado en campos como la estadística, la inteligencia
+                    artificial, el aprendizaje automático y la toma de decisiones bajo incertidumbre.<br><br>
+
+                    Es importante destacar que el teorema de Bayes se basa en ciertas suposiciones, como la
+                    independencia de los eventos y la disponibilidad de información precisa y completa. Sin embargo, en
+                    la práctica, estas suposiciones pueden no cumplirse siempre, lo que puede afectar la precisión de
+                    los resultados obtenidos utilizando el teorema de Bayes.
+                    <a class="referencia-azul" href="#fuente2-1" onclick="cambiarColor('fuente2-1', 'color-azul')">1</a>
+                </p>
+
+            </section>
+            <section name="Videos"
+                class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-grande">Video sobre el tema/ Ejemplo</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Un ejemplo común de aplicación del teorema de Bayes es en el diagnóstico médico. Supongamos que
+                    queremos determinar la probabilidad de que un paciente tenga una enfermedad en particular, dado que
+                    ha dado positivo en una prueba específica. Utilizando el teorema de Bayes, podemos combinar la
+                    probabilidad previa de que el paciente tenga la enfermedad, la precisión de la prueba y la
+                    prevalencia de la enfermedad en la población para calcular la probabilidad posterior de que el
+                    paciente esté realmente enfermo.<br><br>
+                </p>
+                <div style="text-align:center;">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/D7KKlC0LOyw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe>
+                </div>
+            </section>
+
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-enorme p-abajo-30">Pregunta</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál es el objetivo principal del teorema de Bayes en el razonamiento probabilístico?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Estimar la precisión de una prueba médica.</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Determinar la independencia de los eventos.</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Calcular probabilidades previas de eventos.</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')"> Actualizar creencias iniciales basadas en evidencia.</div>
+                </div><br><br>
+
+                <!-- <p class="color-blanco texto-grande texto-justificado">¿Qué metodología en la Inteligencia Artificial
+                    implica el almacenamiento y reutilización de casos previos para resolver problemas similares en el
+                    futuro?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Aprendizaje
+                        automático (Machine Learning)</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Enfoque basado en
+                        casos</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Enfoque basado en
+                        reglas</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Sistemas expertos
+                    </div>
+                </div> -->
+            </section>
+
+            <section
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/aspectos_metodologicos/razonamiento_probabilistico">
+                    <i class="uil uil-previous texto-enorme color-azul"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema anterior</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/reglas_busquedas/arquitectura_sistema">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Unidad 3</label>
+                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
+                </a>
+            </section>
+
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-azul p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente2-1">1. Russell, S. J., Norvig, P., Davis, E., & Genesereth, M. (2016).
+                    Artificial Intelligence: A Modern Approach. Pearson.</p>
+                <!--<p class="cita" id="fuente2-2">2. Brachman, R. J., & Levesque, H. J. (2004). Knowledge Representation
+                    and Reasoning. Morgan Kaufmann.</p>-->
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
+</body>
+
+</html>
