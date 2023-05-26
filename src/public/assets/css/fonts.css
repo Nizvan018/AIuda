@@ -63,3 +63,10 @@
 .texto-no-decorado{
     text-decoration: none;
 }
+
+.fuentes a{
+    color: #bd3e76;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
