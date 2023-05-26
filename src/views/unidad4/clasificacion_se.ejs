@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
+
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -91,6 +93,19 @@
                 </div>
 
             </section>
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-violeta texto-enorme p-abajo-30">Repasando...</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál es una característica de los sistemas expertos basados en reglas?
+        
+        
+                </p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Utilizan árboles clasificatorios para representar las posibles soluciones.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Se basan en la adaptación de problemas resueltos en un dominio de aplicación.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Deducen nuevos hechos a partir de reglas IF (condición) y THEN (acción).</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Utilizan redes bayesianas para realizar inferencias.</div>
+                </div>
+            </section>
             <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
                 <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aplicaciones_IA/sistemas_expertos/conceptos_basicos">
                     <i class="uil uil-previous texto-enorme color-violeta"></i>
@@ -107,10 +122,14 @@
             <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
             <p class="cita" id="fuente4-1">1. (InnovaciónDigital & InnovaciónDigital, 2023)</p>
         </section>
+        
+        </section>
+                   
     </div>
-
+   
     <!-- <%- include('../componentes/footer.ejs')  %> -->
 
     <script src="/assets/js/fuentes.js"></script>
+    <script src="/assets/js/preguntas.js"></script>
 </body>
 </html>

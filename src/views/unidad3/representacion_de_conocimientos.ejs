@@ -100,7 +100,30 @@
                 </section>
 
 
-            </div>
+            
+            
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-amarillo texto-enorme p-abajo-30">Pregunta</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál es la función de la representación declarativa?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Expresar las interacciones entre fragmentos de conocimiento, pero tiene la desventaja de que es difícil de modificar una vez que se ha creado.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Hacer que la representación mixta o heurística sea muy útil en aplicaciones de IA donde se requiere un equilibrio entre estas dos cualidades.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Crear fragmentos de conocimiento que son independientes unos de otros, lo que hace que sean fácilmente modificables.</div>
+                    <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Describir el comportamiento de los sistemas expertos y su capacidad para tomar decisiones basadas en el conocimiento que poseen.</div>
+                </div>
+            </section>
+        
+            
+            <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="">
+                    <i class="uil uil-previous texto-enorme color-amarillo"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Unidad 2</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/reglas_busquedas/metodos_de_inferencia">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
+                    <i class="uil uil-step-forward texto-enorme color-amarillo"></i>
+                </a>
+            </section>
             
         </section>
         
@@ -113,28 +136,7 @@
     </div>
 
     <!-- <%- include('../componentes/footer.ejs')  %> -->
-    <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
-        <h2 class="color-amarillo texto-enorme p-abajo-30">Pregunta</h2>
-        <p class="color-blanco texto-grande texto-justificado">¿Cuál es la función de la representación declarativa?</p>
-        <div class="contenedor-respuestas">
-            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Expresar las interacciones entre fragmentos de conocimiento, pero tiene la desventaja de que es difícil de modificar una vez que se ha creado.</div>
-            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Hacer que la representación mixta o heurística sea muy útil en aplicaciones de IA donde se requiere un equilibrio entre estas dos cualidades.</div>
-            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Crear fragmentos de conocimiento que son independientes unos de otros, lo que hace que sean fácilmente modificables.</div>
-            <div class="respuesta amarillo m-arriba-20" onclick="evaluar(event, 'fondo-amarillo')">Describir el comportamiento de los sistemas expertos y su capacidad para tomar decisiones basadas en el conocimiento que poseen.</div>
-        </div>
-    </section>
 
-    
-    <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
-        <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aspectos_metodologicos/teorema_de_Bayes">
-            <i class="uil uil-previous texto-enorme color-amarillo"></i>
-            <label class="cursor-pointer color-blanco texto-peso-500">Unidad 2</label>
-        </a>
-        <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/reglas_busquedas/metodos_de_inferencia">
-            <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
-            <i class="uil uil-step-forward texto-enorme color-amarillo"></i>
-        </a>
-    </section>
 
     <script src="/assets/js/fuentes.js"></script>
     <script src="/assets/js/preguntas.js"></script>

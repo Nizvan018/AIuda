@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -198,6 +199,17 @@
                 </div>
             </section>
 
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-violeta texto-enorme p-abajo-30">Recordando ...</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cómo se clasifican los robots según su generación?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Primera Generación: Robots manipuladores; Segunda Generación: En aprendizaje; Cuarta Generación: Robots móviles; Quinta Generación: Robots inteligentes.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Primera Generación: Robots manipuladores; Segunda Generación: Robots con control sensorizado; Tercera Generación: Reprogramables mediante ordenadores; Cuarta Generación: Robots móviles; Quinta Generación: Robots con alta inteligencia artificial.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Primera Generación: Robots manipuladores; Segunda Generación: En aprendizaje; Tercera Generación: Reprogramables mediante ordenadores; Cuarta Generación: Robots móviles; Quinta Generación: Robots inteligentes.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Primera Generación: Robots manipuladores; Segunda Generación: Robots con control sensorizado; Cuarta Generación: Robots móviles; Quinta Generación: Robots con alta inteligencia artificial.</div>
+                </div>
+            </section>
+    
             <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
                 <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aplicaciones_IA/robotica/conceptos_basicos">
                     <i class="uil uil-previous texto-enorme color-violeta"></i>
@@ -208,16 +220,16 @@
                     <i class="uil uil-step-forward texto-enorme color-violeta"></i>
                 </a>
             </section>
+            
+            <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas contenido-principal color-blanco">
+                <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente4-1">1. (Euroinnova Formación, 2022)</p>
+                <p class="cita" id="fuente4-2">2. (Clasificación de los robots - Inteligencia Artificial, s. f.)</p>
+            </section>
 
         </section>
 
-      
         
-        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas contenido-principal color-blanco">
-            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
-            <p class="cita" id="fuente4-1">1. (Euroinnova Formación, 2022)</p>
-            <p class="cita" id="fuente4-2">2. (Clasificación de los robots - Inteligencia Artificial, s. f.)</p>
-        </section>
     </div>
 
     
@@ -225,5 +237,6 @@
     <!-- <%- include('../componentes/footer.ejs')  %> -->
 
     <script src="/assets/js/fuentes.js"></script>
+    <script src="/assets/js/preguntas.js"></script>
 </body>
 </html>
