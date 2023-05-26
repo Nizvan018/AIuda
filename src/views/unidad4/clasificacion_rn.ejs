@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/decoraciones.css">
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad IV</title>
 </head>
@@ -143,6 +144,17 @@
                 </div>
 
             </section>
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-violeta texto-enorme p-abajo-30">Pon a prueba lo que has aprendido!</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál de las siguientes afirmaciones es correcta sobre la clasificación de las redes neuronales?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Las redes neuronales multicapas no tienen capas ocultas.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Las redes neuronales recurrentes carecen de memoria.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Las redes neuronales totalmente conectadas tienen conexiones entre todas las neuronas.</div>
+                    <div class="respuesta violeta m-arriba-20" onclick="evaluar(event, 'fondo-violeta')">Las redes neuronales convuncionales son utilizadas principalmente en la aproximación de funciones.</div>
+                </div>
+            </section>
+        
             <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
                 <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aplicaciones_IA/redes_neuronales/conceptos_basicos">
                     <i class="uil uil-previous texto-enorme color-violeta"></i>
@@ -153,16 +165,19 @@
                     <i class="uil uil-step-forward texto-enorme color-violeta"></i>
                 </a>
             </section>
-        </section>
-        <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
-            <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
-            <p class="cita" id="fuente4-1">1. (Finance, 2023)</p>
-            <p class="cita" id="fuente4-2">2. (Matich, 2001)</p>
+        
+            <section name="Fuentes" class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-violeta p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente4-1">1. (Finance, 2023)</p>
+                <p class="cita" id="fuente4-2">2. (Matich, 2001)</p>
+            </section>
+            
         </section>
     </div>
 
     <!-- <%- include('../componentes/footer.ejs')  %> -->
 
     <script src="/assets/js/fuentes.js"></script>
+    <script src="/assets/js/preguntas.js"></script>
 </body>
 </html>
