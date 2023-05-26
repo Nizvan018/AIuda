@@ -25,7 +25,7 @@
 </head>
 
 <body class="fondo-negro">
-    <%- include('../componentes/header.ejs'); %>
+    <%- include('../componentes/headerU2.ejs'); %>
 
         <div class="ancho-100 d-flex flex-column centro-horizontal">
             <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
@@ -119,37 +119,30 @@
                         Estas metodologías ofrecen diferentes enfoques para abordar la representación del conocimiento,
                         el razonamiento y la toma de decisiones en la IA, y su elección dependerá de las necesidades y
                         características del problema que se pretende resolver.
-                    <a class="referencia-azul" href="#fuente2-2"
-                        onclick="cambiarColor('fuente2-2', 'color-azul')">2</a><br><br>
+                        <a class="referencia-azul" href="#fuente2-2"
+                            onclick="cambiarColor('fuente2-2', 'color-azul')">2</a><br><br>
                     </p>
                 </ol>
             </section>
-            <section name="Videos" class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+            <section name="Videos"
+                class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
                 <h2 class="color-azul texto-grande p-arriba-30">Videos sobre el tema</h2>
-                    <p class="p-arriba-10 color-blanco texto-justificado">
-                        Nunca está de más aprender más<br><br>
-                    </p>
-                    <div style="text-align:center;">
-                        <iframe width="426" height="240" src="https://www.youtube.com/embed/oT3arRRB2Cw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen=""></iframe>
-                        
-                        <iframe width="426" height="240" src="https://www.youtube.com/embed/Sb8XVheowVQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen=""></iframe>
-                    </div>
-                </section>
-            <section
-                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex derecha-vertical">
-                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
-                    href="/inteligencia_artificial/habilidades_proceso">
-                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
-                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
-                </a>
-            </section>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Nunca está de más aprender más<br><br>
+                </p>
+                <div style="text-align:center;">
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/oT3arRRB2Cw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe>
 
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/Sb8XVheowVQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe>
+                </div>
+            </section>
+            
             <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
                 <h2 class="color-azul texto-enorme p-abajo-30">Preguntas</h2>
                 <p class="color-blanco texto-grande texto-justificado">¿Cuál de los siguientes principios de
@@ -178,7 +171,18 @@
                     </div>
                 </div>
             </section>
-            
+
+            <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/inteligencia_artificial/papel_heuristica">
+                    <i class="uil uil-previous texto-enorme color-azul"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Unidad 1</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/aspectos_metodologicos/paradigmas">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
+                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
+                </a>
+            </section>
+
             <section name="Fuentes"
                 class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
                 <h3 class="color-azul p-abajo-20 texto-grande">Referencias</h3>
