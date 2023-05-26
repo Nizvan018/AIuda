@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/decoraciones.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
+
+    <title>AIuda: Unidad II</title>
+</head>
+
+<body class="fondo-negro">
+    <%- include('../componentes/headerU2.ejs'); %>
+
+        <div class="ancho-100 d-flex flex-column centro-horizontal">
+            <section class="d-flex flex-column contenido-principal contenido-temas d-flex ancho-100 p-50">
+                <h1 class="color-azul texto-enorme p-abajo-30">2. Representación del conocimiento, razonamiento y los
+                    Aspectos Metodológicos.</h1>
+
+                <h2 class="color-blanco texto-grande"><span class="color-azul">2.7.</span> Conocimiento no-monótono y
+                    otras
+                    lógicas.</h2>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    El razonamiento no monotónico es una forma de razonamiento en la inteligencia artificial que permite
+                    la revisión y modificación de las conclusiones previamente inferidas a medida que se adquiere nueva
+                    información o se presentan nuevos casos. A diferencia del razonamiento monotónico, donde las
+                    conclusiones son definitivas y no se modifican, el razonamiento no monotónico reconoce la
+                    posibilidad de cambios en las conclusiones a medida que se agregan nuevos conocimientos.
+                    <br><br>
+                    Una de las características principales del razonamiento no monotónico es su capacidad para manejar
+                    la incertidumbre y la falta de información completa. En muchas situaciones reales, la información
+                    disponible puede ser limitada o contradictoria, y el razonamiento no monotónico permite inferir
+                    conclusiones provisionales y revisarlas si se presentan nuevos datos que las contradigan o las
+                    modifiquen. Esto es particularmente útil en dominios donde la información es dinámica y puede
+                    cambiar con el tiempo.
+                    <a class="referencia-azul" href="#fuente2-1"
+                        onclick="cambiarColor('fuente2-1', 'color-azul')">1</a><br><br>
+                </p>
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-10 borde-blanco" src="../../img/am_no_monotono.jpg" alt="IA"><br><br>
+                </div>
+
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    En el campo de la inteligencia artificial, se han propuesto diversas lógicas y enfoques para el
+                    razonamiento no monotónico. Algunos ejemplos incluyen:<br>
+                </p>
+                <ol class="p-izquierda-20 color-blanco">
+                    <li class="p-abajo-10"><span class="texto-peso-600">Lógica de creencias:</span> Esta lógica se basa
+                        en la idea de que las creencias son provisionales y sujetas a cambios. Permite la revisión de
+                        creencias en función de nueva información y la adición de nuevas creencias que pueden
+                        contradecir o modificar las existentes.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Lógica de programas lógicos no
+                            monotónicos:</span> Estos programas se basan en reglas lógicas que pueden ser anuladas o
+                        modificadas en ciertas circunstancias. Esto permite el razonamiento flexible y la adaptación de
+                        las reglas en función de la situación.</li>
+                    <li class="p-abajo-10"><span class="texto-peso-600">Lógica deóntica:</span> Esta lógica se utiliza
+                        para razonar sobre normas y obligaciones. Permite el razonamiento no monotónico al considerar la
+                        posibilidad de excepciones a las normas y la modificación de las obligaciones en función de
+                        circunstancias específicas.</li><br>
+                </ol>
+                <div style="text-align:center;">
+                    <img class="ancho-50 alto-50 p-10 borde-blanco" src="../../img/am_otras.jpg" alt="IA">
+                </div>
+                <p class="p-arriba-10 p-abajo-20 color-blanco texto-justificado">
+                    El razonamiento no monotónico y otras lógicas han sido ampliamente estudiados en la inteligencia
+                    artificial y se han desarrollado diferentes marcos teóricos y herramientas para su implementación.
+                    Estos enfoques son esenciales para abordar problemas complejos donde la información puede ser
+                    incompleta, contradictoria o sujeta a cambios. Al permitir la revisión y modificación de las
+                    conclusiones previas, el razonamiento no monotónico mejora la capacidad de los sistemas de
+                    inteligencia artificial para adaptarse y tomar decisiones más flexibles en entornos dinámicos y
+                    cambiantes.
+                    <a class="referencia-azul" href="#fuente2-2" onclick="cambiarColor('fuente2-2', 'color-azul')">2</a>
+                </p>
+
+            </section>
+            <section name="Videos"
+                class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-grande">Videos sobre el tema</h2>
+                <p class="p-arriba-10 color-blanco texto-justificado">
+                    Nunca está de más aprender más<br><br>
+                </p>
+                <div style="text-align:center;">
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/MfkcjwJY6nQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe>
+                </div>
+            </section>
+            
+            <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+                <h2 class="color-azul texto-enorme p-abajo-30">Pregunta</h2>
+                <p class="color-blanco texto-grande texto-justificado">¿Cuál de las siguientes afirmaciones describe mejor el razonamiento no monotónico?</p>
+                <div class="contenedor-respuestas">
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-verde')"> Es un tipo de razonamiento que permite la revisión y modificación de las conclusiones a medida que se adquiere nueva información. </div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Es un tipo de razonamiento que siempre produce conclusiones correctas y definitivas.</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Es un tipo de razonamiento que se basa únicamente en reglas lógicas y axiomas.</div>
+                    <div class="respuesta azul m-arriba-20" onclick="evaluar(event, 'fondo-rosa')"> Es un tipo de razonamiento que se utiliza exclusivamente en el campo de la inteligencia artificial.</div>
+                </div><br><br>
+            </section>
+
+            <section
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/aspectos_metodologicos/razonamiento_monotono">
+                    <i class="uil uil-previous texto-enorme color-azul"></i>
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema anterior</label>
+                </a>
+                <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado"
+                    href="/aspectos_metodologicos/razonamiento_probabilistico">
+                    <label class="cursor-pointer color-blanco texto-peso-500">Tema siguiente</label>
+                    <i class="uil uil-step-forward texto-enorme color-azul"></i>
+                </a>
+            </section>
+            
+            <section name="Fuentes"
+                class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco">
+                <h3 class="color-azul p-abajo-20 texto-grande">Referencias</h3>
+                <p class="cita" id="fuente2-1">1. Brewka, G., Niemelä, I., & Eiter, T. (2011). Nonmonotonic Reasoning in Artificial Intelligence. Springer.</p>
+                <p class="cita" id="fuente2-2">2. Yuste-Ginel, A. (2009). Nonmonotonic Reasoning: An Overview. ResearchGate.</p>
+            </section>
+        </div>
+
+        <!-- <%- include('../componentes/footer.ejs')  %> -->
+
+        <script src="/assets/js/fuentes.js"></script>
+        <script src="/assets/js/preguntas.js"></script>
+</body>
+
+</html>
