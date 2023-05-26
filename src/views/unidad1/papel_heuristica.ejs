@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/assets/css/colors.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/componentes/footer.css">
+    <link rel="stylesheet" href="/assets/css/preguntas.css">
 
     <title>AIuda: Unidad I</title>
 </head>
@@ -60,6 +61,16 @@
                 </ul>
             </p>
         </section>
+        <section class="d-flex flex-column contenido-temas ancho-100 p-abajo-50 p-derecha-50 p-izquierda-50">
+            <h2 class="color-rosa texto-enorme p-abajo-30">Pregunta</h2>
+            <p class="color-blanco texto-grande texto-justificado">Es la fase en la cual se ejecutan las estrategias deseadas</p>
+            <div class="contenedor-respuestas">
+                <div class="respuesta rosa m-arriba-20" onclick="evaluar(event, 'fondo-verde')">Avanzar en dichas estrategias</div>
+                <div class="respuesta rosa m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Explorar estategias viables</div>
+                <div class="respuesta rosa m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Lograr la solución y evaluar los efectos de las actividades</div>
+                <div class="respuesta rosa m-arriba-20" onclick="evaluar(event, 'fondo-rosa')">Identificar el problema</div>
+            </div>
+        </section>
         <section class="p-derecha-50 p-izquierda-50 p-abajo-50 ancho-100 contenido-temas color-blanco d-flex f-espacio">
             <a class="d-flex centro-horizontal cursor-pointer texto-no-decorado" href="/inteligencia_artificial/modelo_agente_inteligente">
                 <i class="uil uil-previous texto-enorme color-rosa"></i>
@@ -80,5 +91,6 @@
     <!-- <%- include('../componentes/footer.ejs')  %> -->
     
     <script src="/assets/js/fuentes.js"></script>
+    <script src="/assets/js/preguntas.js"></script>
 </body>
 </html>
