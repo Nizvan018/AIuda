@@ -7,3 +7,7 @@ export function main(req:Request, res:Response){
 export function bibliografia(req:Request, res:Response){
     res.render('bibliografia.ejs');
 }
+
+export function aboutus(req:Request, res:Response){
+    res.render('aboutus.ejs');
+}
