@@ -31,12 +31,3 @@
 .contenedor-respuestas .violeta:hover{
     border-left: 24px solid #8338ec;
 }
-/* .contenedor-respuesta::before{
-    display: block;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 8px;
-    height: 100%;
-    background-color: white;
-} */

@@ -1,5 +1,5 @@
 function cambiarColor(id, color) {
-    let fuente = document.getElementById(id);
+    let fuente = document.getElement(id);
     fuente.classList.add(color);
     fuente.classList.add('fondo-gris-oscuro')
     setTimeout(() => {
